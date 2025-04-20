@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rycell Games</title> <!-- TODO: update page title -->
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <meta name="description" content="Page Description"> <!-- TODO: update meta description -->
+    <meta property="og:title" content="Home - Page"> <!-- TODO: update og:title -->
+    <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
+    <meta property="og:description" content="OG Page Description"> <!-- TODO: update og:description -->
+    <meta property="og:image" content="/path/to/image"> <!-- TODO: og:image -->
+    <meta property="og:image:alt" content="Rycell Games Logo"> <!-- TODO: update og:image:alt -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <script defer src="/static/js/all.min.js"></script>
+
+    <style>
+        :root {
+            --bgclr: rgb(14, 14, 14);
+            --sidebarOpacity: .5;
+            --sidebarClr: rgba(0, 0, 0, var(--sidebarOpacity));
+            --textClr: white;
+            --sidebarWidth: 60px;
+            --searchBarClr: rgba(0, 0, 0, 0.377);
+
+        }
+
+        html,
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .gothicexpandedone {
+            font-family: "Special Gothic Expanded One", sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: var(--bgclr);
+            margin: 0;
+        }
+
+        .sidebar {
+            background-color: var(--sidebarClr);
+            flex-grow: 1;
+            width: 60px;
+            transition: width 0.2s ease;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar:hover {
+            width: 200px;
+        }
+
+        .section {
+            transition: all 0.2s ease;
+            width: 200px;
+            border: inset;
+            border-width: 0;
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+            align-items: center;
+            color: var(--textClr);
+            text-decoration: none;
+        }
+
+        header {
+            height: 50px;
+            background-color: gray;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header p {
+            margin: 0;
+            color: white;
+            font-size: large;
+            
+            font-weight: 900;
+            font-family: "Special Gothic Expanded One", sans-serif;
+        }
+
+        header p span {
+            color: rgb(98, 0, 255);
+            font-weight: 900;
+            font-family: "Special Gothic Expanded One", sans-serif;
+        }
+
+        header svg {
+            color: #ffffff;
+        }
+
+        .search {
+            background-color: var(--searchBarClr);
+            height: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 15px;
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .search textarea {
+            background-color: rgba(0,0,0,0);
+            border: none;
+        }
+
+        .section:hover {
+            --shadow-width: 5px;
+            -webkit-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+            box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+        }
+
+        a svg {
+            min-width: 50%;
+            min-height: 50%;
+        }
+
+        .iconholder {
+            width: var(--sidebarWidth);
+            height: var(--sidebarWidth);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><span>RYCELL</span> GAMES</p>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <div class="sidebar">
+        <a class="section" href="/">
+            <div class="iconholder">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            Home
+        </a>
+        <a class="section" href="/games/cars.html">
+            <div class="iconholder">
+                <i class="fa-solid fa-car"></i>
+            </div>
+            Cars
+        </a>
+        <a class="section" href="/games/action.html">
+            <div class="iconholder">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            Action
+        </a>
+    </div>
+</body>
+
+</html>
