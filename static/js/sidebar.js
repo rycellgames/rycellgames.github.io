@@ -1,3 +1,18 @@
+let cookieconsentloaded
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('script').forEach(element => {
+        if (element.getAttribute('src') == '/static/js/cookieconsent.js') {cookieconsentloaded = true}
+    });
+
+    var script = document.createElement("script");
+    script.src = '/static/js/cookieconsent.js'; 
+
+if (!cookieconsentloaded) document.head.appendChild(script)
+});
+
+
+
 async function load() {
     const res = await fetch('/static/pre-html/sidebar.xml');
     const xmlstr = await res.text();
