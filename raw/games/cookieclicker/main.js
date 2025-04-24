@@ -16860,9 +16860,12 @@ window.onload=function()
 			LoadLang('loc/EN.js?v='+Game.version,function(lang){return function(){
 				locStringsFallback=locStrings;
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
-					var launch=function(){
+					var launch = function () {
 						Game.Launch();
-						if (top!=self) Game.ErrorFrame();
+						if (top != self) {
+							Game.Load(function(){Game.Init();if (firstLaunch) Game.showLangSelection(true);});
+							
+						}
 						else
 						{
 							console.log('[=== '+choose([

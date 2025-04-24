@@ -1,0 +1,51 @@
+<categories>
+    <category>
+        <icon>fa-solid fa-house</icon>
+        <text>Home</text>
+        <attribute>
+            <name>href</name>
+            <value>/</value>
+        </attribute>
+    </category>
+    <category>
+        <icon>fa-solid fa-car</icon>
+        <text>Racing</text>
+        <attribute>
+            <name>href</name>
+            <value>/games/racing.html</value>
+        </attribute>
+    </category>
+    <category>
+        <icon>fa-solid fa-bolt</icon>
+        <text>Action</text>
+        <attribute>
+            <name>href</name>
+            <value>/games/action.html</value>
+        </attribute>
+    </category>
+    <category>
+        <icon>fa-solid fa-puzzle-piece</icon>
+        <text>Puzzle</text>
+        <attribute>
+            <name>href</name>
+            <value>/games/puzzle.html</value>
+        </attribute>
+    </category>
+    <category>
+        <icon>fa-solid fa-mountain-sun</icon>
+        <text>Adventure</text>
+        <attribute>
+            <name>href</name>
+            <value>/games/adventure.html</value>
+        </attribute>
+    </category>
+ <!--   <category>
+        <icon>fa-solid fa-arrow-pointer</icon>
+        <text>.io</text>
+        <attribute>
+            <name>href</name>
+            <value>/games/io.html</value>
+        </attribute>
+    </category> -->
+    
+</categories>

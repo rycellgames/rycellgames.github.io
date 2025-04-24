@@ -7,145 +7,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="56d5663b-96f8-4cc8-9a00-7016cc30a9f8"></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46c80f28914946c984176d3e1a314971"}'></script>
+    <script defer src="/static/js/cookieconsent.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Rycell Games</title> <!-- TODO: update page title -->
+    <title>Rycell Games</title>
     <script type="module">
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
-    <meta name="description" content="Page Description"> <!-- TODO: update meta description -->
-    <meta property="og:title" content="Home - Page"> <!-- TODO: update og:title -->
-    <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
-    <meta property="og:description" content="OG Page Description"> <!-- TODO: update og:description -->
-    <meta property="og:image" content="/path/to/image"> <!-- TODO: og:image -->
-    <meta property="og:image:alt" content="Rycell Games Logo"> <!-- TODO: update og:image:alt -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-
+    <meta property="og:title" content="Home - Rycell Games"> <!-- TODO: update og:title -->
+    <meta property="og:image" content="/static/images/brand/logo.png">
+    <meta property="og:description" content="You can find the trending unblocked games on Rycell Games; PLAY NOW">
     <script defer src="/static/js/all.min.js"></script>
 
+    <link rel="stylesheet" href="/static/css/default.css">
+    <link rel="stylesheet" href="/static/css/roller.css">
+
+    <script src="/static/js/games.js"></script>
+    <script src="/static/js/sidebar.js"></script>
+
     <style>
-        :root {
-            --bgclr: rgb(14, 14, 14);
-            --sidebarOpacity: .5;
-            --sidebarClr: rgba(0, 0, 0, var(--sidebarOpacity));
-            --textClr: white;
-            --sidebarWidth: 60px;
-            --searchBarClr: rgba(0, 0, 0, 0.377);
-
-        }
-
-        html,
-        * {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .gothicexpandedone {
-            font-family: "Special Gothic Expanded One", sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: var(--bgclr);
-            margin: 0;
-        }
-
-        .sidebar {
-            background-color: var(--sidebarClr);
-            flex-grow: 1;
-            width: 60px;
-            transition: width 0.2s ease;
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar:hover {
-            width: 200px;
-        }
-
-        .section {
-            transition: all 0.2s ease;
-            width: 200px;
-            border: inset;
-            border-width: 0;
-            display: flex;
-            flex-direction: row;
-            overflow-x: hidden;
-            align-items: center;
-            color: var(--textClr);
-            text-decoration: none;
-        }
-
-        header {
-            height: 50px;
-            background-color: gray;
-            padding: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-        }
-
-        header p {
-            margin: 0;
-            color: white;
-            font-size: large;
-            
-            font-weight: 900;
-            font-family: "Special Gothic Expanded One", sans-serif;
-        }
-
-        header p span {
+        h1 span {
+            font-family: 'Special Gothic Expanded One';
             color: rgb(98, 0, 255);
-            font-weight: 900;
-            font-family: "Special Gothic Expanded One", sans-serif;
         }
 
-        header svg {
-            color: #ffffff;
+        .container h1 {
+            font-family: 'Special Gothic Expanded One';
         }
 
-        .search {
-            background-color: var(--searchBarClr);
-            height: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
-            border-radius: 15px;
-            width: 120px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+        .name {
+            font-family: 'Special Gothic Expanded One';
         }
 
-        .search textarea {
-            background-color: rgba(0,0,0,0);
-            border: none;
+        .name span {
+            color: rgb(98, 0, 255);
+            font-family: 'Special Gothic Expanded One';
         }
 
-        .section:hover {
-            --shadow-width: 5px;
-            -webkit-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
-            -moz-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
-            box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
-        }
-
-        a svg {
-            min-width: 50%;
-            min-height: 50%;
-        }
-
-        .iconholder {
-            width: var(--sidebarWidth);
-            height: var(--sidebarWidth);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .container {
+            margin: 10px;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -153,29 +60,526 @@
 <body>
     <header>
         <p><span>RYCELL</span> GAMES</p>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
     </header>
-    <div class="sidebar">
-        <a class="section" href="/">
-            <div class="iconholder">
-                <i class="fa-solid fa-house"></i>
+    <div class="after">
+        <div class="sidebar">
+            <a class="section" href="/">
+                <div class="iconholder">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                Home
+            </a>
+            <a class="section" href="/games/cars.html">
+                <div class="iconholder">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                Cars
+            </a>
+            <a class="section" href="/games/action.html">
+                <div class="iconholder">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                Action
+            </a>
+        </div>
+
+
+        <div class="secondaryBody">
+
+            <style>
+                .blind {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            </style>
+
+            <p style="text-align: center; font-size: xx-large;" class="gothicexpandedone"><span
+                    class="bigpurple">RYCELL</span> GAMES</p>
+            <div class="roller">
+                <div class="roller-track">
+                    <div class="item" style="background-image: url(/static/images/games/slope.webp);">
+                        <div class="details">
+                            <p>Slope</p>
+                            <a href="/games/slope/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/snowrider3d.webp);">
+                        <div class="details">
+                            <p>Snow Rider 3D</p>
+                            <a href="/games/snowrider3d/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/motox3m2.webp);">
+                        <div class="details">
+                            <p>Moto X3M 2</p>
+                            <a href="/games/motox3m2/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/adanceoffireandice.webp);">
+                        <div class="details">
+                            <p>A Dance Of Fire and Ice (ADOFAI)</p>
+                            <a href="/games/adanceoffireandice/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/flappybird.webp);">
+                        <div class="details">
+                            <p>Flappy Bird</p>
+                            <a href="/games/flappybird/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/vex3.webp);">
+                        <div class="details">
+                            <p>Vex 3</p>
+                            <a href="/games/vex3/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for infinite scroll -->
+
+                    <div class="item" style="background-image: url(/static/images/games/snowrider3d.webp);">
+                        <div class="details">
+                            <p>Snow Rider 3D</p>
+                            <a href="/games/snowrider3d/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/motox3m2.webp);">
+                        <div class="details">
+                            <p>Moto X3M 2</p>
+                            <a href="/games/motox3m2" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/adanceoffireandice.webp);">
+                        <div class="details">
+                            <p>A Dance Of Fire and Ice (ADOFAI)</p>
+                            <a href="/games/adanceoffireandice.html/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/flappybird.webp);">
+                        <div class="details">
+                            <p>Flappy Bird</p>
+                            <a href="/games/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/vex3.webp);">
+                        <div class="details">
+                            <p>Vex 3</p>
+                            <a href="/games/vex3/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/static/images/games/slope.webp);">
+                        <div class="details">
+                            <p>Slope</p>
+                            <a href="/games/slope/" class="rollerLink">Play</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            Home
-        </a>
-        <a class="section" href="/games/cars.html">
-            <div class="iconholder">
-                <i class="fa-solid fa-car"></i>
+
+            <div class="writing">
+                <div class="info">
+                    <p class="gothicexpandedone gameheading">
+                        OUR CHOICE
+                    </p>
+                    <p class="infodesc">
+                        <span class="gothicexpandedone bigletter">D</span>rift <span
+                            class="gothicexpandedone bigletter">B</span>oss is a thrilling
+                        game where you have to drift around small corners on thin platforms to get the highest score
+                        possible! To become good
+                        at this game, you need reaction time, speed and fast fingers. Along with that, you can grind for
+                        coins to get powerups like
+                        insurance to keep your score and get another chance! Along with that, you can get cards to merge
+                        together to get new
+                        car designs!
+                    </p>
+                </div>
+                <a class="gameTile bigtile" href="/games/driftboss">
+                    <img src="/static/images/games/driftboss.webp" alt="Sleigh Jumping Over Rock In Snow">
+                    <div class="else">Drift Boss</div>
+                </a>
             </div>
-            Cars
-        </a>
-        <a class="section" href="/games/action.html">
-            <div class="iconholder">
-                <i class="fa-solid fa-bolt"></i>
+
+            <div class="gameGrid" preloaded="true">
+
+                <a class="gameTile" href="/games/1"><img src="/static/images/games/1.webp" alt="1 Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>1</p>
+                    </div>
+                </a><a class="gameTile" href="/games/10minutestilldawn"><img
+                        src="/static/images/games/10minutestilldawn.webp" alt="10 Minutes Till Dawn Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>10 Minutes Till Dawn</p>
+                    </div>
+                </a><a class="gameTile" href="/games/2048"><img src="/static/images/games/2048.webp"
+                        alt="2048 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>2048</p>
+                    </div>
+                </a><a class="gameTile" href="/games/adanceoffireandice"><img
+                        src="/static/images/games/adanceoffireandice.webp" alt="A dance of Fire and Ice Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>A dance of Fire and Ice</p>
+                    </div>
+                </a><a class="gameTile" href="/games/adarkroom"><img src="/static/images/games/adarkroom.webp"
+                        alt="A Dark Room Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>A Dark Room</p>
+                    </div>
+                </a><a class="gameTile" href="/games/adrenalinechallenge"><img
+                        src="/static/images/games/adrenalinechallenge.webp" alt="Adrenaline Challenge Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>Adrenaline Challenge</p>
+                    </div>
+                </a><a class="gameTile" href="/games/adventuredrivers"><img
+                        src="/static/images/games/adventuredrivers.webp" alt="Adventure Drivers Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>Adventure Drivers</p>
+                    </div>
+                </a><a class="gameTile" href="/games/astray"><img src="/static/images/games/astray.webp"
+                        alt="Astray Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Astray</p>
+                    </div>
+                </a><a class="gameTile" href="/games/backcountry"><img src="/static/images/games/backcountry.webp"
+                        alt="Back Country Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Back Country</p>
+                    </div>
+                </a><a class="gameTile" href="/games/badicecream"><img src="/static/images/games/badicecream.webp"
+                        alt="Bad Ice Cream Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Bad Ice Cream</p>
+                    </div>
+                </a><a class="gameTile" href="/games/badicecream2"><img src="/static/images/games/badicecream2.webp"
+                        alt="Bad Ice Cream 2 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Bad Ice Cream 2</p>
+                    </div>
+                </a><a class="gameTile" href="/games/basketrandom"><img src="/static/images/games/basketrandom.webp"
+                        alt="Basket Random Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Basket Random</p>
+                    </div>
+                </a><a class="gameTile" href="/games/bitlife"><img src="/static/images/games/bitlife.webp"
+                        alt="BitLife Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>BitLife</p>
+                    </div>
+                </a><a class="gameTile" href="/games/bounceback"><img src="/static/images/games/bounceback.webp"
+                        alt="Bounce Back Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Bounce Back</p>
+                    </div>
+                </a><a class="gameTile" href="/games/boxingrandom"><img src="/static/images/games/boxingrandom.webp"
+                        alt="Boxing Random Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Boxing Random</p>
+                    </div>
+                </a><a class="gameTile" href="/games/breaklock"><img src="/static/images/games/breaklock.webp"
+                        alt="Break Lock Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Break Lock</p>
+                    </div>
+                </a><a class="gameTile" href="/games/breakout"><img src="/static/images/games/breakout.webp"
+                        alt="Breakout Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Breakout</p>
+                    </div>
+                </a><a class="gameTile" href="/games/chess"><img src="/static/images/games/chess.webp"
+                        alt="Chess Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Chess</p>
+                    </div>
+                </a><a class="gameTile" href="/games/connect3"><img src="/static/images/games/connect3.webp"
+                        alt="Connect 3 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Connect 3</p>
+                    </div>
+                </a><a class="gameTile" href="/games/cookieclicker"><img src="/static/images/games/cookieclicker.webp"
+                        alt="Cookie Clicker Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Cookie Clicker</p>
+                    </div>
+                </a><a class="gameTile" href="/games/cubefield"><img src="/static/images/games/cubefield.webp"
+                        alt="Cube Field Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Cube Field</p>
+                    </div>
+                </a><a class="gameTile" href="/games/dinojump"><img src="/static/images/games/dinojump.webp"
+                        alt="Dino Jump Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Dino Jump</p>
+                    </div>
+                </a><a class="gameTile" href="/games/doodlejump"><img src="/static/images/games/doodlejump.webp"
+                        alt="Doodle Jump Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Doodle Jump</p>
+                    </div>
+                </a><a class="gameTile" href="/games/driftboss"><img src="/static/images/games/driftboss.webp"
+                        alt="Drift Boss Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Drift Boss</p>
+                    </div>
+                </a><a class="gameTile" href="/games/ducklife"><img src="/static/images/games/ducklife.webp"
+                        alt="Duck Life Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Duck Life</p>
+                    </div>
+                </a><a class="gameTile" href="/games/ducklife2"><img src="/static/images/games/ducklife2.webp"
+                        alt="Duck Life 2 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Duck Life 2</p>
+                    </div>
+                </a><a class="gameTile" href="/games/ducklife3"><img src="/static/images/games/ducklife3.webp"
+                        alt="Duck Life 3 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Duck Life 3</p>
+                    </div>
+                </a><a class="gameTile" href="/games/ducklife4"><img src="/static/images/games/ducklife4.webp"
+                        alt="Duck Life 4 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Duck Life 4</p>
+                    </div>
+                </a><a class="gameTile" href="/games/evilglitch"><img src="/static/images/games/evilglitch.webp"
+                        alt="Evil Glitch Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Evil Glitch</p>
+                    </div>
+                </a><a class="gameTile" href="/games/factoryballsforever"><img
+                        src="/static/images/games/factoryballsforever.webp" alt="Factory Balls Forever Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>Factory Balls Forever</p>
+                    </div>
+                </a><a class="gameTile" href="/games/fireboyandwatergirlintheforesttemple"><img
+                        src="/static/images/games/fireboyandwatergirlintheforesttemple.webp"
+                        alt="Fireboy And Watergirl Forest Temple Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Fireboy And Watergirl Forest Temple</p>
+                    </div>
+                </a><a class="gameTile" href="/games/flappybird"><img src="/static/images/games/flappybird.webp"
+                        alt="Flappy Bird Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Flappy Bird</p>
+                    </div>
+                </a><a class="gameTile" href="/games/friendlyfire"><img src="/static/images/games/friendlyfire.webp"
+                        alt="Friendly Fire Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Friendly Fire</p>
+                    </div>
+                </a><a class="gameTile" href="/games/gopherkart"><img src="/static/images/games/gopherkart.webp"
+                        alt="Gopher Kart Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Gopher Kart</p>
+                    </div>
+                </a><a class="gameTile" href="/games/hextris"><img src="/static/images/games/hextris.webp"
+                        alt="Hextris Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Hextris</p>
+                    </div>
+                </a><a class="gameTile" href="/games/konnekt"><img src="/static/images/games/konnekt.webp"
+                        alt="Konnekt Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Konnekt</p>
+                    </div>
+                </a><a class="gameTile" href="/games/motox3m2"><img src="/static/images/games/motox3m2.webp"
+                        alt="Moto X3M2 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Moto X3M2</p>
+                    </div>
+                </a><a class="gameTile" href="/games/ovo"><img src="/static/images/games/ovo.webp"
+                        alt="OvO Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>OvO</p>
+                    </div>
+                </a><a class="gameTile" href="/games/pacman"><img src="/static/images/games/pacman.webp"
+                        alt="Pacman Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Pacman</p>
+                    </div>
+                </a><a class="gameTile" href="/games/pushback"><img src="/static/images/games/pushback.webp"
+                        alt="Pushback Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Pushback</p>
+                    </div>
+                </a><a class="gameTile" href="/games/racer"><img src="/static/images/games/racer.webp"
+                        alt="Racer Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Racer</p>
+                    </div>
+                </a><a class="gameTile" href="/games/radiusraid"><img src="/static/images/games/radiusraid.webp"
+                        alt="radiusraid Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>radiusraid</p>
+                    </div>
+                </a><a class="gameTile" href="/games/retrobowl"><img src="/static/images/games/retrobowl.webp"
+                        alt="Retro Bowl Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Retro Bowl</p>
+                    </div>
+                </a><a class="gameTile" href="/games/retrohaunt"><img src="/static/images/games/retrohaunt.webp"
+                        alt="Restrohaunt Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Restrohaunt</p>
+                    </div>
+                </a><a class="gameTile" href="/games/riddleschool"><img src="/static/images/games/riddleschool.webp"
+                        alt="Riddle School Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Riddle School</p>
+                    </div>
+                </a><a class="gameTile" href="/games/riddleschool2"><img src="/static/images/games/riddleschool2.webp"
+                        alt="Riddle School 2 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Riddle School 2</p>
+                    </div>
+                </a><a class="gameTile" href="/games/riddleschool3"><img src="/static/images/games/riddleschool3.webp"
+                        alt="Riddle School 3 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Riddle School 3</p>
+                    </div>
+                </a><a class="gameTile" href="/games/riddleschool4"><img src="/static/images/games/riddleschool4.webp"
+                        alt="Riddle School 4 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Riddle School 4</p>
+                    </div>
+                </a><a class="gameTile" href="/games/riddleschool5"><img src="/static/images/games/riddleschool5.webp"
+                        alt="Riddle School 5 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Riddle School 5</p>
+                    </div>
+                </a><a class="gameTile" href="/games/roadblocks"><img src="/static/images/games/roadblocks.webp"
+                        alt="Roadblocks Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Roadblocks</p>
+                    </div>
+                </a><a class="gameTile" href="/games/slope"><img src="/static/images/games/slope.webp"
+                        alt="Slope Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Slope</p>
+                    </div>
+                </a><a class="gameTile" href="/games/snake"><img src="/static/images/games/snake.webp"
+                        alt="Snake Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Snake</p>
+                    </div>
+                </a><a class="gameTile" href="/games/snowrider3d"><img src="/static/images/games/snowrider3d.webp"
+                        alt="Snow Rider 3D Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Snow Rider 3D</p>
+                    </div>
+                </a><a class="gameTile" href="/games/soccerrandom"><img src="/static/images/games/soccerrandom.webp"
+                        alt="Soccer Random Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Soccer Random</p>
+                    </div>
+                </a><a class="gameTile" href="/games/spacecompany"><img src="/static/images/games/spacecompany.webp"
+                        alt="Space Company Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Space Company</p>
+                    </div>
+                </a><a class="gameTile" href="/games/surf"><img src="/static/images/games/surf.webp"
+                        alt="Surf Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Surf</p>
+                    </div>
+                </a><a class="gameTile" href="/games/tetris"><img src="/static/images/games/tetris.webp"
+                        alt="Tetris Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Tetris</p>
+                    </div>
+                </a><a class="gameTile" href="/games/thechromaincident"><img
+                        src="/static/images/games/thechromaincident.webp" alt="The Chromain Incident Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>The Chromain Incident</p>
+                    </div>
+                </a><a class="gameTile" href="/games/thereisnogame"><img src="/static/images/games/thereisnogame.webp"
+                        alt="There is No Game Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>There is No Game</p>
+                    </div>
+                </a><a class="gameTile" href="/games/tunnelrush"><img src="/static/images/games/tunnelrush.webp"
+                        alt="Tunnel Rush Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Tunnel Rush</p>
+                    </div>
+                </a><a class="gameTile" href="/games/underrun"><img src="/static/images/games/underrun.webp"
+                        alt="Underrun Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Underrun</p>
+                    </div>
+                </a><a class="gameTile" href="/games/vex3"><img src="/static/images/games/vex3.webp"
+                        alt="Vex 3 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Vex 3</p>
+                    </div>
+                </a><a class="gameTile" href="/games/vex4"><img src="/static/images/games/vex4.webp"
+                        alt="Vex 4 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Vex 4</p>
+                    </div>
+                </a><a class="gameTile" href="/games/vex5"><img src="/static/images/games/vex5.webp"
+                        alt="Vex 5 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Vex 5</p>
+                    </div>
+                </a><a class="gameTile" href="/games/vex6"><img src="/static/images/games/vex6.webp"
+                        alt="Vex 6 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Vex 6</p>
+                    </div>
+                </a><a class="gameTile" href="/games/vex7"><img src="/static/images/games/vex7.webp"
+                        alt="Vex 7 Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Vex 7</p>
+                    </div>
+                </a><a class="gameTile" href="/games/volleyrandom"><img src="/static/images/games/volleyrandom.webp"
+                        alt="Volley Random Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>Volley Random</p>
+                    </div>
+                </a><a class="gameTile" href="/games/worldshardestgame"><img
+                        src="/static/images/games/worldshardestgame.webp" alt="Worlds Hardest Game Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>Worlds Hardest Game</p>
+                    </div>
+                </a><a class="gameTile" href="/games/worldshardestgame2"><img
+                        src="/static/images/games/worldshardestgame2.webp" alt="Worlds Hardest Game 2 Game Thumbnail"
+                        loading="lazy">
+                    <div class="else">
+                        <p>Worlds Hardest Game 2</p>
+                    </div>
+                </a><a class="gameTile" href="/games/xx142b2.exe"><img src="/static/images/games/xx142b2.exe.webp"
+                        alt="xx142b2.exe Game Thumbnail" loading="lazy">
+                    <div class="else">
+                        <p>xx142b2.exe</p>
+                    </div>
+                </a>
             </div>
-            Action
-        </a>
+
+            <div class="container description border">
+                <style>
+                    .border {
+
+                        border: solid;
+                        border-width: 1px;
+                        border-color: rgb(98, 0, 255);
+
+                    }
+
+                    .description h1 {
+                        margin-top: 5px;
+                    }
+                </style>
+                <h1><span>RYCELL</span> GAMES</h1>
+                You can find the most trending unblocked games on <span class="name"><span>RYCELL</span> GAMES</span>
+            </div>
+        </div>
     </div>
 </body>
 

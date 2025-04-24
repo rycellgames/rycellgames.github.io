@@ -1,0 +1,383 @@
+:root {
+    --bgclr: rgb(14, 14, 14);
+    --sidebarOpacity: .5;
+    --sidebarClr: #070707;
+    --textClr: white;
+    --sidebarWidth: 60px;
+    --searchBarClr: rgba(0, 0, 0, 0.377);
+    --headerHeight: 20px;
+    --headerColor: var(--sidebarClr);
+    --headerPadding: 10px;
+}
+
+html,
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gameheading {
+    font-size: xx-large;
+    text-align: left;
+    width: 20%;
+}
+
+.info p {
+    margin: 0;
+}
+
+.bigletter {
+    font-size: x-large;
+}
+
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    flex-grow: 0;
+    max-width: 500px; /* Set a maximum width to prevent resizing */
+}
+
+.info p {
+    width: 100%;
+}
+
+.writing {
+    display: flex;
+    width: calc(100% - 10px);
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.gothicexpandedone {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: white;
+}
+
+.bigpurple {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: rgb(98, 0, 255);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bgclr);
+    margin: 0;
+}
+
+.shareFrame {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #070707b0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.infodesc {
+    width: 50%;
+}
+
+.bigtile {
+    height: 300px !important;
+    width: 500px !important;
+    max-width: 100% !important;
+    flex-shrink: 0;
+}
+
+.bigtile img {
+
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.shareInfo {
+    z-index: 20;
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.342);
+    padding: 10px;
+}
+
+@media (max-width: 720px) {
+    .writing {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bigtile {
+        width: 90% !important;
+    }
+}
+
+.shareInfo div .link {
+    background-color: rgba(0, 0, 0, 0.13);
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    height: 20px;
+    color: white;
+    border-color: rgba(53, 53, 53, 0.342);
+    overflow-y: hidden;
+    resize: none;
+    transition: all 0.2s ease;
+    overflow-x: hidden;
+
+
+}
+
+.shareInfo div button {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: auto;
+
+    background-color: rgb(98, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.shareInfo div .link:focus {
+    outline: none;
+    border-color: rgb(98, 0, 255);
+}
+
+.shareInfo div {
+    display: flex;
+    flex-direction: row;
+}
+
+.shareInfo p {
+    margin: 2px;
+}
+
+.sidebar {
+    position: fixed;
+    width: var(--sidebarWidth);
+    margin-top: calc(var(--headerHeight) + var(--headerPadding));
+    height: 100%;
+    background-color: var(--sidebarClr);
+    transition: width 0.2s ease;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.blind p {
+    color: white;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+.blind span {
+    color: rgb(98, 0, 255);
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.section {
+    transition: all 0.2s ease;
+    width: 200px;
+    border: inset;
+    border-width: 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    align-items: center;
+    color: var(--textClr);
+    text-decoration: none;
+}
+
+header {
+    z-index: 10;
+    position: fixed;
+    background-color: var(--headerColor);
+    padding: var(--headerPadding);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: var(--headerHeight);
+}
+
+header p {
+    margin: 0;
+    color: white;
+    font-size: large;
+    
+    font-weight: 900;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+header p span {
+    color: rgb(98, 0, 255);
+    font-weight: 900;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+header svg {
+    color: #ffffff;
+}
+
+.search {
+    background-color: var(--searchBarClr);
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search textarea {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.section:hover {
+    --shadow-width: 5px;
+    -webkit-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.blind h1 {text-align: center; font-family: 'Special Gothic Expanded One', sans-serif; color: white;} 
+
+a svg {
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.iconholder {
+    width: var(--sidebarWidth);
+    height: var(--sidebarWidth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondaryBody {
+    margin-top: calc(var(--headerHeight) + var(--headerPadding));
+    margin-left: var(--sidebarWidth);
+    width: calc(100% - var(--sidebarWidth));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+.after {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.gameTile {
+    width: 190px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(7, 0, 48);
+    border-radius: 5px;
+    background-color: rgb(7, 0, 48);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.gameTile:hover {
+    cursor: pointer;
+    border-color: rgb(0, 102, 255);
+    transform: scale(1.025, 1.025);
+}
+
+.gameTile .else {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    color: rgb(0, 195, 255);;
+    
+}
+
+.gameImageHolder {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gameTile img {
+    width: 190px;
+    height: 106.88px;
+    object-fit: cover;
+}
+
+.gameTile .else p {
+    margin: 0;
+    font-weight: bold;
+    font-size: small;
+    text-decoration: none;
+}
+
+.gameGrid {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, 210px);
+    gap: 10px;
+    margin-top: 20px;
+    width: 99%;
+}
+
+.gameGrid a {
+    text-decoration: none;
+}
+
+.gameTile img {
+    image-rendering: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.blind {
+    background-color: rgba(255,255,255,.5);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: rgba(255,255,255,.5);
+    width: 80%;
+    min-height: 30px;
+}
+
+.container p {
+    margin: 0;
+}
