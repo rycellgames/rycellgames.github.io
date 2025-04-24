@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /raw/
+Disallow: /404.html
+Disallow: /404
