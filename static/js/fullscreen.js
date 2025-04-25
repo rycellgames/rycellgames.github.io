@@ -4,9 +4,11 @@ document.addEventListener('fullscreenchange', async () => {
   const iframe = document.querySelector('.gameFrame');
   console.log('fullscreen');
   if (document.fullscreenElement) {
-    iframe.classList.add('fullscreen');
+    iframe.requestFullscreen()
+    iframe.contentWindow.location.reload()
   } else {
     iframe.classList.remove('fullscreen');
+    iframe.contentWindow.location.reload()
     try { await screen.orientation.lock('landscape'); } catch(err) {console.log(err)}
   }
 });
@@ -16,7 +18,8 @@ document.querySelector(".secondaryBody").style.height =
   
 document.querySelector('#fullscreen').addEventListener('click', () => {
   const iframe = document.querySelector('.gameFrame');
-  iframe.classList.add('fullscreen');
+  iframe.requestFullscreen()
+  iframe.contentWindow.location.reload()
   openFullscreen();
 });
 
