@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet" />
+
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="56d5663b-96f8-4cc8-9a00-7016cc30a9f8"></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "46c80f28914946c984176d3e1a314971"}'></script>
+    <script defer src="/static/js/cookieconsent.js"></script>
+
+    <title>1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/default.css" />
+    <script defer src="/static/js/all.min.js"></script>
+    <script src="/static/js/sidebar.js"></script>
+    <link rel="stylesheet" href="/static/css/game.css">
+    <script defer src="/static/js/fullscreen.js"></script>
+
+<!-- <meta property="og:title" content="1 Unblocked">
+     <meta property="og:description" content="Play 1 Unblocked on Rycell Games today!">
+     <meta property="og:image" content="/static/images/games/1.webp">
+
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:image" content="/static/images/games/1.webp"> -->
+
+</head>
+
+<body>
+    <header>
+        <p><span>RYCELL</span> GAMES</p>
+    </header>
+
+    <div class="sidebar"></div>
+    <div class="secondaryBody">
+
+        <input style="display: none;" type="file" id="dataInput" accept="text/rycellgames" onchange="importData()">
+        <a style="display: none;" download="gamedata.rycellgames" id="download" href=""></a>
+
+        <div class="container transparent">
+            <h1 style="color: white; text-align: center;">Export/Import your Game Data</h1>
+            <div style="display: flex; flex-direction: row;">
+                <button class="imex" id="exportData"><i class="fa-solid fa-file-export"></i> Export Game Data</button>
+                <button class="imex" id="importData"><i class="fa-solid fa-file-import"></i> Import Game Data</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        // 👋
+        // If you're a Skid, you're not hacking.
+        // Otherwise, feel free to check this "super complex" saving algorithm out! 🙂
+
+        function exportData() {
+            var values = [],
+                keys = Object.keys(localStorage),
+                i = keys.length;
+
+            console.log(keys)
+
+            while (i--) {
+
+                let value = {
+                    "wam": `${keys[i]}`,
+                    "maw": `${localStorage.getItem(keys[i])}`
+                }
+
+                values.push(value)
+            }
+
+            const exportJSON = JSON.stringify({
+                "data": values
+            });
+
+            // exportJSON.split().reverse().join()
+
+            const mutated = exportJSON.split("").reverse().join("")
+
+
+            document.getElementById('download').href = `data:text/plain,${exportJSON.split().reverse().join()})}`
+            document.getElementById('download').click()
+
+        }
+        function importData() { 
+            const file = document.querySelector('input' /* #dataInput */).files[0]
+
+            const reader = new FileReader()
+
+            reader.readAsText(file, 'utf-8')
+
+            reader.addEventListener('load', () => {
+                alert(reader.result)
+            });
+
+        }
+        function initializeImportion() {document.querySelector('#dataInput').click()}
+
+        document.getElementById('exportData').addEventListener('click', exportData)
+        document.getElementById('importData').addEventListener('click', initializeImportion)
+    </script>
+</body>
+
+</html>
