@@ -1,3 +1,7 @@
+  :root {
+    --animTime: 20s
+  }
+
   .roller {
     overflow: hidden;
     width: 100%;
@@ -8,17 +12,18 @@
     display: flex;
     width: fit-content;
     overflow: visible;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     height: 200px;
+    transition: all ease 0.2s;
   }
 
   .item {
-      flex: 0 0 auto;
-      aspect-ratio: 16/9;
-      height: 100%;
-      width: auto;
-      background-position: center center;
-      background-size: cover;
+    flex: 0 0 auto;
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: auto;
+    background-position: center center;
+    background-size: cover;
   }
 
   .item .details {
@@ -29,14 +34,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0;
   }
 
   .item .details p {
     font-size: larger;
     font-family: 'Special Gothic Expanded One';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
   }
 
@@ -45,7 +52,10 @@
     text-decoration: none;
     min-width: 70px;
     font-family: 'Special Gothic Expanded One';
-    background-color: red;
+    background-color: rgba(111, 0, 255, 0.568);
+    border: solid;
+    border-width: 1px;
+    border-color: blueviolet;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -60,11 +70,16 @@
   }
 
   .item img {
-      height: 100%;
-      width: auto;
+    height: 100%;
+    width: auto;
   }
 
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
