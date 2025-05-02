@@ -97,7 +97,7 @@
             reader.addEventListener('load', () => {
                 const rawResult = reader.result
 
-                const decodedResult = JSON.parse(rawResult.split("").reverse().join(""))
+                const decodedResult = JSON.parse(rawResult.split("").join(""))
 
                 decodedResult.data.forEach(element => {
                     localStorage.setItem(element.wam, element.maw)
