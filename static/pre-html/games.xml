@@ -168,6 +168,13 @@
     <category>action,arcade</category>
     <description></description></game>
   <game>
+    <name>Drift Hunters</name>
+    <identifier>drifthunters</identifier>
+    <thumbnail>/static/images/games/drifthunters.webp</thumbnail>
+    <link>/games/drifthunters</link>
+    <category>racing</category>
+    <description></description></game>
+  <game>
     <name>Duck Life</name>
     <identifier>ducklife</identifier>
     <thumbnail>/static/images/games/ducklife.webp</thumbnail>
