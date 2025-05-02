@@ -9,10 +9,10 @@
     </category>
     <category>
         <icon>fa-solid fa-car</icon>
-        <text>Racing</text>
+        <text>Vehicles</text>
         <attribute>
             <name>href</name>
-            <value>/games/racing.html</value>
+            <value>/games/vehicles.html</value>
         </attribute>
     </category>
     <category>

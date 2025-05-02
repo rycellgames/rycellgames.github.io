@@ -1,4 +1,7 @@
 async function load() {
+
+    if (document.querySelector('.gameGrid').getAttribute('preloaded')) return;
+
     const res = await fetch('/static/pre-html/games.xml')
     const text = await res.text()
 
