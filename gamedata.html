@@ -95,7 +95,15 @@
             reader.readAsText(file, 'utf-8')
 
             reader.addEventListener('load', () => {
-                alert(reader.result)
+                const rawResult = reader.result
+
+                const decodedResult = JSON.parse(rawResult.split("").reverse().join(""))
+
+                decodedResult.data.forEach(element => {
+                    localStorage.setItem(element.wam, element.maw)
+                });
+
+
             });
 
         }
