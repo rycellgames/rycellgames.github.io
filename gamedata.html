@@ -2,6 +2,9 @@
 <html lang="en-US">
 
 <head>
+
+    <!-- DISCONTINUED -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet" />
@@ -42,7 +45,7 @@
         <a style="display: none;" download="gamedata.rycellgames" id="download" href=""></a>
 
         <div class="container transparent">
-            <h1 style="color: white; text-align: center;">Export/Import your Game Data</h1>
+            <h1 style="color: white; text-align: center;">Export/Import your Game Data (Works, but games don't seem to store stuff in localstorage...)</h1>
             <div style="display: flex; flex-direction: row;">
                 <button class="imex" id="exportData"><i class="fa-solid fa-file-export"></i> Export Game Data</button>
                 <button class="imex" id="importData"><i class="fa-solid fa-file-import"></i> Import Game Data</button>
@@ -53,9 +56,7 @@
     </div>
 
     <script>
-        // 👋
-        // If you're a Skid, you're not hacking.
-        // Otherwise, feel free to check this "super complex" saving algorithm out! 🙂
+// discontinued
 
         function exportData() {
             var values = [],
@@ -83,7 +84,7 @@
             const mutated = exportJSON.split("").reverse().join("")
 
 
-            document.getElementById('download').href = `data:text/plain,${exportJSON.split().reverse().join()})}`
+            document.getElementById('download').href = `data:text/plain,${exportJSON.split("").reverse().join("")}`
             document.getElementById('download').click()
 
         }
@@ -97,7 +98,7 @@
             reader.addEventListener('load', () => {
                 const rawResult = reader.result
 
-                const decodedResult = JSON.parse(rawResult.split("").join(""))
+                const decodedResult = JSON.parse(rawResult.split("").reverse().join(""))
 
                 decodedResult.data.forEach(element => {
                     localStorage.setItem(element.wam, element.maw)

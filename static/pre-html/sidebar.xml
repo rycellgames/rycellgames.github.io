@@ -39,7 +39,7 @@
             <value>/games/adventure.html</value>
         </attribute>
     </category>
-    <category>
+   <!-- <category>
         <icon>fa-solid fa-circle-user</icon>
         <text>Game Data</text>
         <attribute>
@@ -47,7 +47,7 @@
             <value>/gamedata.html</value>
         </attribute>
         <attribute></attribute>
-    </category>
+    </category> -->
  <!--   <category>
         <icon>fa-solid fa-arrow-pointer</icon>
         <text>.io</text>
