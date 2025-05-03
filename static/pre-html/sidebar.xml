@@ -8,6 +8,14 @@
         </attribute>
     </category>
     <category>
+        <icon>fa-solid fa-magnifying-glass</icon>
+        <text>Search</text>
+        <attribute>
+            <name>href</name>
+            <value>/search.html</value>
+        </attribute>
+    </category>
+    <category>
         <icon>fa-solid fa-car</icon>
         <text>Vehicles</text>
         <attribute>
