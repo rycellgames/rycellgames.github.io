@@ -567,7 +567,39 @@
         "link": "/games/xx142b2.exe",
         "category": "action,arcade",
         "description": ""
-      }
+      },
+      {
+				"name": "FNAF",
+				"identifier": "fnaf",
+				"thumbnail": "/static/images/games/fnaf.webp",
+				"link": "/games/fnaf",
+				"category": "adventure,horror,five,nights,freddies,five nights at freddies,freddy",
+				"description": ""
+			},
+			{
+				"name": "FNAF 2",
+				"identifier": "fnaf2",
+				"thumbnail": "/static/images/games/fnaf2.webp",
+				"link": "/games/fnaf2",
+				"category": "adventure,horror,five,nights,freddies,five nights at freddies,freddy",
+				"description": ""
+			},
+			{
+				"name": "FNAF 3",
+				"identifier": "fnaf3",
+				"thumbnail": "/static/images/games/fnaf3.webp",
+				"link": "/games/fnaf3",
+				"category": "adventure,horror,five,nights,freddies,five nights at freddies,freddy",
+				"description": ""
+			},
+			{
+				"name": "FNAF 4",
+				"identifier": "fnaf4",
+				"thumbnail": "/static/images/games/fnaf4.webp",
+				"link": "/games/fnaf4",
+				"category": "adventure,horror,five,nights,freddies,five nights at freddies,freddy",
+				"description": ""
+			}
     ]
 }
  

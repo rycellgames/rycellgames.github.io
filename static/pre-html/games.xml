@@ -39,14 +39,14 @@
     <identifier>adrenalinechallenge</identifier>
     <thumbnail>/static/images/games/adrenalinechallenge.webp</thumbnail>
     <link>/games/adrenalinechallenge</link>
-    <category>action,racing,arcade</category>
+    <category>action,vehicles,arcade</category>
     <description></description></game>
   <game>
     <name>Adventure Drivers</name>
     <identifier>adventuredrivers</identifier>
     <thumbnail>/static/images/games/adventuredrivers.webp</thumbnail>
     <link>/games/adventuredrivers</link>
-    <category>action,racing</category>
+    <category>action,vehicles</category>
     <description></description></game>
   <game>
     <name>Astray</name>
@@ -172,7 +172,7 @@
     <identifier>drifthunters</identifier>
     <thumbnail>/static/images/games/drifthunters.webp</thumbnail>
     <link>/games/drifthunters</link>
-    <category>racing</category>
+    <category>vehicles</category>
     <description></description></game>
   <game>
     <name>Duck Life</name>
@@ -231,6 +231,34 @@
     <category>arcade</category>
     <description></description></game>
   <game>
+    <name>FNAF</name>
+    <identifier>fnaf</identifier>
+    <thumbnail>/static/images/games/fnaf.webp</thumbnail>
+    <link>/games/fnaf</link>
+    <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
+    <description></description></game>
+  <game>
+    <name>FNAF 2</name>
+    <identifier>fnaf2</identifier>
+    <thumbnail>/static/images/games/fnaf2.webp</thumbnail>
+    <link>/games/fnaf2</link>
+    <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
+    <description></description></game>
+  <game>
+    <name>FNAF 3</name>
+    <identifier>fnaf3</identifier>
+    <thumbnail>/static/images/games/fnaf3.webp</thumbnail>
+    <link>/games/fnaf3</link>
+    <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
+    <description></description></game>
+  <game>
+    <name>FNAF 4</name>
+    <identifier>fnaf4</identifier>
+    <thumbnail>/static/images/games/fnaf4.webp</thumbnail>
+    <link>/games/fnaf4</link>
+    <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
+    <description></description></game>
+  <game>
     <name>Friendly Fire</name>
     <identifier>friendlyfire</identifier>
     <thumbnail>/static/images/games/friendlyfire.webp</thumbnail>
@@ -242,7 +270,7 @@
     <identifier>gopherkart</identifier>
     <thumbnail>/static/images/games/gopherkart.webp</thumbnail>
     <link>/games/gopherkart</link>
-    <category>racing,arcade</category>
+    <category>vehicles,arcade</category>
     <description></description></game>
   <game>
     <name>Hextris</name>
@@ -263,7 +291,7 @@
     <identifier>motox3m2</identifier>
     <thumbnail>/static/images/games/motox3m2.webp</thumbnail>
     <link>/games/motox3m2</link>
-    <category>racing</category>
+    <category>vehicles</category>
     <description></description></game>
   <game>
     <name>OvO</name>
@@ -291,7 +319,7 @@
     <identifier>racer</identifier>
     <thumbnail>/static/images/games/racer.webp</thumbnail>
     <link>/games/racer</link>
-    <category>racing,arcade</category>
+    <category>vehicles,arcade</category>
     <description></description></game>
   <game>
     <name>radiusraid</name>
