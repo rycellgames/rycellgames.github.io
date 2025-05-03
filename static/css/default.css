@@ -277,16 +277,26 @@ header svg {
     color: #ffffff;
 }
 
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .search {
+    border: none;
+    outline: none;
+    width: 90%;
     background-color: var(--searchBarClr);
     height: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 15px;
-    width: 120px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: white;
 }
 
 .search textarea {

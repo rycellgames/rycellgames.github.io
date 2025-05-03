@@ -1,4 +1,9 @@
+let loadedGames = []
+
+let preloadedErr
+
 async function load() {
+    try {
     const res = await fetch('/static/pre-html/games.xml')
     const text = await res.text()
 
@@ -6,8 +11,10 @@ async function load() {
 
     const xml = parser.parseFromString(text, 'application/xml')
 
-    if (document.querySelector('.gameGrid').getAttribute('preloaded')) return;
-
+    if (!preloadedErr) {
+    if (document.querySelector('.gameGrid').getAttribute('preloaded')) {preloaded = true; return;}
+    
+    }
     xml.querySelector('games').querySelectorAll('game').forEach(element => {
         const gameTile = document.createElement('a')
         const gameTileImage = document.createElement('img')
@@ -31,6 +38,10 @@ async function load() {
         document.querySelector('.gameGrid').append(gameTile)
 
     });
+    } catch (err) {
+        preloadedErr = true
+        load()
+    }
 }
 
 document.addEventListener('DOMContentLoaded', load)

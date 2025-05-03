@@ -1,0 +1,573 @@
+{
+    "game": [
+      {
+        "name": "1",
+        "identifier": "1",
+        "thumbnail": "/static/images/games/1.webp",
+        "link": "/games/1",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "10 Minutes Till Dawn",
+        "identifier": "10minutestilldawn",
+        "thumbnail": "/static/images/games/10minutestilldawn.webp",
+        "link": "/games/10minutestilldawn",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "2048",
+        "identifier": "2048",
+        "thumbnail": "/static/images/games/2048.webp",
+        "link": "/games/2048",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "A dance of Fire and Ice",
+        "identifier": "adanceoffireandice",
+        "thumbnail": "/static/images/games/adanceoffireandice.webp",
+        "link": "/games/adanceoffireandice",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "A Dark Room",
+        "identifier": "adarkroom",
+        "thumbnail": "/static/images/games/adarkroom.webp",
+        "link": "/games/adarkroom",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Adrenaline Challenge",
+        "identifier": "adrenalinechallenge",
+        "thumbnail": "/static/images/games/adrenalinechallenge.webp",
+        "link": "/games/adrenalinechallenge",
+        "category": "action,racing,arcade",
+        "description": ""
+      },
+      {
+        "name": "Adventure Drivers",
+        "identifier": "adventuredrivers",
+        "thumbnail": "/static/images/games/adventuredrivers.webp",
+        "link": "/games/adventuredrivers",
+        "category": "action,racing",
+        "description": ""
+      },
+      {
+        "name": "Astray",
+        "identifier": "astray",
+        "thumbnail": "/static/images/games/astray.webp",
+        "link": "/games/astray",
+        "category": "puzzle,adventure",
+        "description": ""
+      },
+      {
+        "name": "Back Country",
+        "identifier": "backcountry",
+        "thumbnail": "/static/images/games/backcountry.webp",
+        "link": "/games/backcountry",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Bad Ice Cream",
+        "identifier": "badicecream",
+        "thumbnail": "/static/images/games/badicecream.webp",
+        "link": "/games/badicecream",
+        "category": "arcade,action",
+        "description": ""
+      },
+      {
+        "name": "Bad Ice Cream 2",
+        "identifier": "badicecream2",
+        "thumbnail": "/static/images/games/badicecream2.webp",
+        "link": "/games/badicecream2",
+        "category": "arcade,action",
+        "description": ""
+      },
+      {
+        "name": "Basket Random",
+        "identifier": "basketrandom",
+        "thumbnail": "/static/images/games/basketrandom.webp",
+        "link": "/games/basketrandom",
+        "category": "arcade,sports",
+        "description": ""
+      },
+      {
+        "name": "BitLife",
+        "identifier": "bitlife",
+        "thumbnail": "/static/images/games/bitlife.webp",
+        "link": "/games/bitlife",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Bounce Back",
+        "identifier": "bounceback",
+        "thumbnail": "/static/images/games/bounceback.webp",
+        "link": "/games/bounceback",
+        "category": "adventure,arcade",
+        "description": ""
+      },
+      {
+        "name": "Boxing Random",
+        "identifier": "boxingrandom",
+        "thumbnail": "/static/images/games/boxingrandom.webp",
+        "link": "/games/boxingrandom",
+        "category": "sports,arcade",
+        "description": ""
+      },
+      {
+        "name": "Break Lock",
+        "identifier": "breaklock",
+        "thumbnail": "/static/images/games/breaklock.webp",
+        "link": "/games/breaklock",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Breakout",
+        "identifier": "breakout",
+        "thumbnail": "/static/images/games/breakout.webp",
+        "link": "/games/breakout",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "Chess",
+        "identifier": "chess",
+        "thumbnail": "/static/images/games/chess.webp",
+        "link": "/games/chess",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Connect 3",
+        "identifier": "connect3",
+        "thumbnail": "/static/images/games/connect3.webp",
+        "link": "/games/connect3",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Cookie Clicker",
+        "identifier": "cookieclicker",
+        "thumbnail": "/static/images/games/cookieclicker.webp",
+        "link": "/games/cookieclicker",
+        "category": "arcade,adventure",
+        "description": ""
+      },
+      {
+        "name": "Cube Field",
+        "identifier": "cubefield",
+        "thumbnail": "/static/images/games/cubefield.webp",
+        "link": "/games/cubefield",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Dino Jump",
+        "identifier": "dinojump",
+        "thumbnail": "/static/images/games/dinojump.webp",
+        "link": "/games/dinojump",
+        "category": "arcade,action",
+        "description": ""
+      },
+      {
+        "name": "Doodle Jump",
+        "identifier": "doodlejump",
+        "thumbnail": "/static/images/games/doodlejump.webp",
+        "link": "/games/doodlejump",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Drift Boss",
+        "identifier": "driftboss",
+        "thumbnail": "/static/images/games/driftboss.webp",
+        "link": "/games/driftboss",
+        "category": "action,arcade",
+        "description": ""
+      },
+      {
+        "name": "Drift Hunters",
+        "identifier": "drifthunters",
+        "thumbnail": "/static/images/games/drifthunters.webp",
+        "link": "/games/drifthunters",
+        "category": "racing",
+        "description": ""
+      },
+      {
+        "name": "Duck Life",
+        "identifier": "ducklife",
+        "thumbnail": "/static/images/games/ducklife.webp",
+        "link": "/games/ducklife",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Duck Life 2",
+        "identifier": "ducklife2",
+        "thumbnail": "/static/images/games/ducklife2.webp",
+        "link": "/games/ducklife2",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Duck Life 3",
+        "identifier": "ducklife3",
+        "thumbnail": "/static/images/games/ducklife3.webp",
+        "link": "/games/ducklife3",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Duck Life 4",
+        "identifier": "ducklife4",
+        "thumbnail": "/static/images/games/ducklife4.webp",
+        "link": "/games/ducklife4",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Evil Glitch",
+        "identifier": "evilglitch",
+        "thumbnail": "/static/images/games/evilglitch.webp",
+        "link": "/games/evilglitch",
+        "category": "action,arcade",
+        "description": ""
+      },
+      {
+        "name": "Factory Balls Forever",
+        "identifier": "factoryballsforever",
+        "thumbnail": "/static/images/games/factoryballsforever.webp",
+        "link": "/games/factoryballsforever",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Fireboy And Watergirl Forest Temple",
+        "identifier": "fireboyandwatergirlintheforesttemple",
+        "thumbnail": "/static/images/games/fireboyandwatergirlintheforesttemple.webp",
+        "link": "/games/fireboyandwatergirlintheforesttemple",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Flappy Bird",
+        "identifier": "flappybird",
+        "thumbnail": "/static/images/games/flappybird.webp",
+        "link": "/games/flappybird",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "Friendly Fire",
+        "identifier": "friendlyfire",
+        "thumbnail": "/static/images/games/friendlyfire.webp",
+        "link": "/games/friendlyfire",
+        "category": "arcade,adventure",
+        "description": ""
+      },
+      {
+        "name": "Gopher Kart",
+        "identifier": "gopherkart",
+        "thumbnail": "/static/images/games/gopherkart.webp",
+        "link": "/games/gopherkart",
+        "category": "racing,arcade",
+        "description": ""
+      },
+      {
+        "name": "Hextris",
+        "identifier": "hextris",
+        "thumbnail": "/static/images/games/hextris.webp",
+        "link": "/games/hextris",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Konnekt",
+        "identifier": "konnekt",
+        "thumbnail": "/static/images/games/konnekt.webp",
+        "link": "/games/konnekt",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Moto X3M2",
+        "identifier": "motox3m2",
+        "thumbnail": "/static/images/games/motox3m2.webp",
+        "link": "/games/motox3m2",
+        "category": "racing",
+        "description": ""
+      },
+      {
+        "name": "OvO",
+        "identifier": "ovo",
+        "thumbnail": "/static/images/games/ovo.webp",
+        "link": "/games/ovo",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Pacman",
+        "identifier": "pacman",
+        "thumbnail": "/static/images/games/pacman.webp",
+        "link": "/games/pacman",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "Pushback",
+        "identifier": "pushback",
+        "thumbnail": "/static/images/games/pushback.webp",
+        "link": "/games/pushback",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Racer",
+        "identifier": "racer",
+        "thumbnail": "/static/images/games/racer.webp",
+        "link": "/games/racer",
+        "category": "racing,arcade",
+        "description": ""
+      },
+      {
+        "name": "radiusraid",
+        "identifier": "radiusraid",
+        "thumbnail": "/static/images/games/radiusraid.webp",
+        "link": "/games/radiusraid",
+        "category": "arcade,action",
+        "description": ""
+      },
+      {
+        "name": "Retro Bowl",
+        "identifier": "retrobowl",
+        "thumbnail": "/static/images/games/retrobowl.webp",
+        "link": "/games/retrobowl",
+        "category": "arcade,sports,action",
+        "description": ""
+      },
+      {
+        "name": "Restrohaunt",
+        "identifier": "retrohaunt",
+        "thumbnail": "/static/images/games/retrohaunt.webp",
+        "link": "/games/retrohaunt",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "Riddle School",
+        "identifier": "riddleschool",
+        "thumbnail": "/static/images/games/riddleschool.webp",
+        "link": "/games/riddleschool",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Riddle School 2",
+        "identifier": "riddleschool2",
+        "thumbnail": "/static/images/games/riddleschool2.webp",
+        "link": "/games/riddleschool2",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Riddle School 3",
+        "identifier": "riddleschool3",
+        "thumbnail": "/static/images/games/riddleschool3.webp",
+        "link": "/games/riddleschool3",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Riddle School 4",
+        "identifier": "riddleschool4",
+        "thumbnail": "/static/images/games/riddleschool4.webp",
+        "link": "/games/riddleschool4",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Riddle School 5",
+        "identifier": "riddleschool5",
+        "thumbnail": "/static/images/games/riddleschool5.webp",
+        "link": "/games/riddleschool5",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Roadblocks",
+        "identifier": "roadblocks",
+        "thumbnail": "/static/images/games/roadblocks.webp",
+        "link": "/games/roadblocks",
+        "category": "puzzle",
+        "description": ""
+      },
+      {
+        "name": "Slope",
+        "identifier": "slope",
+        "thumbnail": "/static/images/games/slope.webp",
+        "link": "/games/slope",
+        "category": "action,arcade",
+        "description": ""
+      },
+      {
+        "name": "Snake",
+        "identifier": "snake",
+        "thumbnail": "/static/images/games/snake.webp",
+        "link": "/games/snake",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "Snow Rider 3D",
+        "identifier": "snowrider3d",
+        "thumbnail": "/static/images/games/snowrider3d.webp",
+        "link": "/games/snowrider3d",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Soccer Random",
+        "identifier": "soccerrandom",
+        "thumbnail": "/static/images/games/soccerrandom.webp",
+        "link": "/games/soccerrandom",
+        "category": "action,sports",
+        "description": ""
+      },
+      {
+        "name": "Space Company",
+        "identifier": "spacecompany",
+        "thumbnail": "/static/images/games/spacecompany.webp",
+        "link": "/games/spacecompany",
+        "category": "adventure",
+        "description": ""
+      },
+      {
+        "name": "Surf",
+        "identifier": "surf",
+        "thumbnail": "/static/images/games/surf.webp",
+        "link": "/games/surf",
+        "category": "action,arcade",
+        "description": ""
+      },
+      {
+        "name": "Tetris",
+        "identifier": "tetris",
+        "thumbnail": "/static/images/games/tetris.webp",
+        "link": "/games/tetris",
+        "category": "arcade",
+        "description": ""
+      },
+      {
+        "name": "The Chromain Incident",
+        "identifier": "thechromaincident",
+        "thumbnail": "/static/images/games/thechromaincident.webp",
+        "link": "/games/thechromaincident",
+        "category": "arcade,adventure",
+        "description": ""
+      },
+      {
+        "name": "There is No Game",
+        "identifier": "thereisnogame",
+        "thumbnail": "/static/images/games/thereisnogame.webp",
+        "link": "/games/thereisnogame",
+        "category": "arcade,adventure",
+        "description": ""
+      },
+      {
+        "name": "Tunnel Rush",
+        "identifier": "tunnelrush",
+        "thumbnail": "/static/images/games/tunnelrush.webp",
+        "link": "/games/tunnelrush",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Underrun",
+        "identifier": "underrun",
+        "thumbnail": "/static/images/games/underrun.webp",
+        "link": "/games/underrun",
+        "category": "action,adventure,arcade",
+        "description": ""
+      },
+      {
+        "name": "Vex 3",
+        "identifier": "vex3",
+        "thumbnail": "/static/images/games/vex3.webp",
+        "link": "/games/vex3",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Vex 4",
+        "identifier": "vex4",
+        "thumbnail": "/static/images/games/vex4.webp",
+        "link": "/games/vex4",
+        "category": "action,adventure",
+        "description": ""
+      },
+      {
+        "name": "Vex 5",
+        "identifier": "vex5",
+        "thumbnail": "/static/images/games/vex5.webp",
+        "link": "/games/vex5",
+        "category": "action,adventure",
+        "description": ""
+      },
+      {
+        "name": "Vex 6",
+        "identifier": "vex6",
+        "thumbnail": "/static/images/games/vex6.webp",
+        "link": "/games/vex6",
+        "category": "action,adventure",
+        "description": ""
+      },
+      {
+        "name": "Vex 7",
+        "identifier": "vex7",
+        "thumbnail": "/static/images/games/vex7.webp",
+        "link": "/games/vex7",
+        "category": "action,adventure",
+        "description": ""
+      },
+      {
+        "name": "Volley Random",
+        "identifier": "volleyrandom",
+        "thumbnail": "/static/images/games/volleyrandom.webp",
+        "link": "/games/volleyrandom",
+        "category": "action,sports,arcade",
+        "description": ""
+      },
+      {
+        "name": "Worlds Hardest Game",
+        "identifier": "worldshardestgame",
+        "thumbnail": "/static/images/games/worldshardestgame.webp",
+        "link": "/games/worldshardestgame",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "Worlds Hardest Game 2",
+        "identifier": "worldshardestgame2",
+        "thumbnail": "/static/images/games/worldshardestgame2.webp",
+        "link": "/games/worldshardestgame2",
+        "category": "action",
+        "description": ""
+      },
+      {
+        "name": "xx142b2.exe",
+        "identifier": "xx142b2.exe",
+        "thumbnail": "/static/images/games/xx142b2.exe.webp",
+        "link": "/games/xx142b2.exe",
+        "category": "action,arcade",
+        "description": ""
+      }
+    ]
+}
+ 
