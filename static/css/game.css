@@ -5,8 +5,11 @@
 
 .description {
     border-radius: 5px;
-    min-height: 70px;
+    /* min-height: 70px; */
     padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {

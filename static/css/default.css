@@ -36,7 +36,8 @@ html,
     padding: 10px;
     color: white;
     flex-grow: 0;
-    max-width: 500px; /* Set a maximum width to prevent resizing */
+    max-width: 500px;
+    /* Set a maximum width to prevent resizing */
 }
 
 .info p {
@@ -154,7 +155,18 @@ body {
 
 a {
     color: rgb(127, 197, 255);
-    /* font-weight: bold; */
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+
+    --background-a-clr: rgba(98, 0, 255, 0.459);
+
+    box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
+    -webkit-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
+    -moz-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
 }
 
 .shareInfo div .link {
@@ -253,7 +265,7 @@ header p {
     margin: 0;
     color: white;
     font-size: large;
-    
+
     font-weight: 900;
     font-family: "Special Gothic Expanded One", sans-serif;
 }
@@ -264,7 +276,10 @@ header p span {
     font-family: "Special Gothic Expanded One", sans-serif;
 }
 
-.imex /* im = import button ex = export button */ {
+.imex
+
+/* im = import button ex = export button */
+    {
     background-color: rgb(98, 0, 255);
     color: white;
     border: none;
@@ -301,7 +316,7 @@ header svg {
 }
 
 .search textarea {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
 }
 
@@ -312,7 +327,11 @@ header svg {
     box-shadow: inset var(--shadow-width) 0px 0px 0px rgba(255, 255, 255, 1);
 }
 
-.blind h1 {text-align: center; font-family: 'Special Gothic Expanded One', sans-serif; color: white;} 
+.blind h1 {
+    text-align: center;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    color: white;
+}
 
 a svg {
     min-width: 50%;
@@ -374,9 +393,9 @@ a svg {
 }
 
 .gameTile:hover .else {
-    -webkit-box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
-    -moz-box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
-    box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
+    -webkit-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
+    -moz-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
+    box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
 }
 
 .gameTile .else p {
@@ -412,7 +431,7 @@ a svg {
     margin: 0;
     text-align: left;
     color: rgb(0, 195, 255);
-    
+
 }
 
 .gameTile img {
@@ -423,7 +442,7 @@ a svg {
 
 .gameGrid {
     display: grid;
-    grid-template-columns:  repeat(auto-fill, 210px);
+    grid-template-columns: repeat(auto-fill, 210px);
     gap: 10px;
     margin-top: 20px;
     width: 99%;
@@ -443,7 +462,7 @@ a svg {
 }
 
 .blind {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -451,9 +470,9 @@ a svg {
 }
 
 .container {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
     width: 80%;
-    min-height: 30px;
+    /* min-height: 30px; */
 }
 
 .container p {
@@ -461,5 +480,5 @@ a svg {
 }
 
 .transparent {
-    background-color: rgba(0,0,0,0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
