@@ -91,6 +91,7 @@ body {
 }
 
 .bigtile {
+    color: white;
     height: 300px !important;
     width: 500px !important;
     max-width: 100% !important;
@@ -346,9 +347,10 @@ a svg {
 }
 
 .gameTile {
-    width: 190px;
+    width: 200px;
+    height: 200px;
     border: solid;
-    border-width: 5px;
+    border-width: 1px;
     border-color: rgb(7, 0, 48);
     border-radius: 5px;
     background-color: rgb(7, 0, 48);
@@ -358,6 +360,11 @@ a svg {
     align-items: center;
     justify-content: center;
     gap: 0;
+    position: relative;
+}
+
+.gameTile * {
+    transition: all 0.2s ease;
 }
 
 .gameTile:hover {
@@ -366,33 +373,52 @@ a svg {
     transform: scale(1.025, 1.025);
 }
 
-.gameTile .else {
-    height: 30px;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-    text-align: center;
-    color: rgb(0, 195, 255);;
-    
-}
-
-.gameImageHolder {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-
-.gameTile img {
-    width: 190px;
-    height: 106.88px;
-    object-fit: cover;
+.gameTile:hover .else {
+    -webkit-box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
+    -moz-box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
+    box-shadow: -4px 1px 67px 26px rgba(0,0,0,0.61) inset;
 }
 
 .gameTile .else p {
+    min-height: 100%;
+    margin: 10px;
+    max-width: 100%;
+    width: fit-content;
+    min-width: 10%;
+    text-align: center;
     margin: 0;
     font-weight: bold;
     font-size: small;
     text-decoration: none;
+    font-size: small;
+    margin-left: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.gameTile:hover .else p {
+    min-width: 100%;
+
+    margin-left: 0;
+}
+
+.gameTile .else {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    text-align: left;
+    color: rgb(0, 195, 255);
+    
+}
+
+.gameTile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .gameGrid {
