@@ -435,8 +435,7 @@ a svg {
 
 .gameTile img {
     image-rendering: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 .content {

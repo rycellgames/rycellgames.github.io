@@ -417,6 +417,14 @@
         "description": ""
       },
       {
+        "name": "Slope 2",
+        "identifier": "slope2",
+        "thumbnail": "/static/images/games/slope2.webp",
+        "link": "/games/slope2",
+        "category": "slope,arcade,action,endless",
+        "description": ""
+      },
+      {
         "name": "Snake",
         "identifier": "snake",
         "thumbnail": "/static/images/games/snake.webp",
@@ -456,6 +464,30 @@
         "category": "action,arcade",
         "description": ""
       },
+      {
+				"name": "Run",
+				"identifier": "run",
+				"thumbnail": "/static/images/games/run.webp",
+				"link": "/games/run",
+				"category": "run,endless,adventure",
+				"description": ""
+			},
+			{
+				"name": "Run 2",
+				"identifier": "run2",
+				"thumbnail": "/static/images/games/run2.webp",
+				"link": "/games/run2",
+				"category": "run,endless,adventure",
+				"description": ""
+			},
+			{
+				"name": "Run 3",
+				"identifier": "run3",
+				"thumbnail": "/static/images/games/run3.webp",
+				"link": "/games/run3",
+				"category": "run,endless,adventure",
+				"description": ""
+			},
       {
         "name": "Tetris",
         "identifier": "tetris",
@@ -599,7 +631,15 @@
 				"link": "/games/fnaf4",
 				"category": "adventure,horror,five,nights,freddies,five nights at freddies,freddy",
 				"description": ""
-			}
+			},
+      {
+        "name": "Rooftop Snipers",
+        "identifier": "rooftopsnipers",
+        "thumbnail": "/static/images/games/rooftopsnipers.webp",
+        "link": "/games/rooftopsnipers",
+        "category": "action,snipe,sniper,rooftop",
+        "description": ""
+      }
     ]
 }
  

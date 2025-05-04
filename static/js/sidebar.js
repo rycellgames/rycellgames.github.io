@@ -53,4 +53,4 @@ async function load() {
     });
 }
 
-load();
+document.addEventListener('DOMContentLoaded', load)

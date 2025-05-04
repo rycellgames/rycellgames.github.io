@@ -322,7 +322,7 @@
     <category>vehicles,arcade</category>
     <description></description></game>
   <game>
-    <name>radiusraid</name>
+    <name>Radius Raid</name>
     <identifier>radiusraid</identifier>
     <thumbnail>/static/images/games/radiusraid.webp</thumbnail>
     <link>/games/radiusraid</link>
@@ -385,11 +385,46 @@
     <category>puzzle</category>
     <description></description></game>
   <game>
+    <name>Rooftop Snipers</name>
+    <identifier>rooftopsnipers</identifier>
+    <thumbnail>/static/images/games/rooftopsnipers.webp</thumbnail>
+    <link>/games/rooftopsnipers</link>
+    <category>action,snipe,sniper,rooftop</category>
+    <description></description></game>
+  <game>
+    <name>Run</name>
+    <identifier>run</identifier>
+    <thumbnail>/static/images/games/run.webp</thumbnail>
+    <link>/games/run</link>
+    <category>run,endless,adventure</category>
+    <description></description></game>
+  <game>
+    <name>Run 2</name>
+    <identifier>run2</identifier>
+    <thumbnail>/static/images/games/run2.webp</thumbnail>
+    <link>/games/run2</link>
+    <category>run,endless,adventure</category>
+    <description></description></game>
+  <game>
+    <name>Run 3</name>
+    <identifier>run3</identifier>
+    <thumbnail>/static/images/games/run3.webp</thumbnail>
+    <link>/games/run3</link>
+    <category>run,endless,adventure</category>
+    <description></description></game>
+  <game>
     <name>Slope</name>
     <identifier>slope</identifier>
     <thumbnail>/static/images/games/slope.webp</thumbnail>
     <link>/games/slope</link>
     <category>action,arcade</category>
+    <description></description></game>
+  <game>
+    <name>Slope 2</name>
+    <identifier>slope2</identifier>
+    <thumbnail>/static/images/games/slope2.webp</thumbnail>
+    <link>/games/slope2</link>
+    <category>slope,arcade,action,endless</category>
     <description></description></game>
   <game>
     <name>Snake</name>
