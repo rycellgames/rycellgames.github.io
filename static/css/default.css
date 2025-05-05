@@ -164,9 +164,11 @@ a:hover {
 
     --background-a-clr: rgba(98, 0, 255, 0.459);
 
-    box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
+   
     -webkit-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
     -moz-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
+    box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
+    
 }
 
 .shareInfo div .link {
@@ -388,13 +390,13 @@ a svg {
 
 .gameTile:hover {
     cursor: pointer;
-    /* border-color: rgb(0, 102, 255); */
+    border-color: rgb(0, 102, 255);
     transform: scale(1.025, 1.025);
 }
 
 .gameTile:hover .else {
-    -webkit-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
-    -moz-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
+    -webkit-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset !important;
+    -moz-box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset !important;
     box-shadow: -4px 1px 67px 26px rgba(0, 0, 0, 0.61) inset;
 }
 
