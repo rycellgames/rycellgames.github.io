@@ -13,7 +13,7 @@ document.addEventListener('fullscreenchange', async () => {
   }
 });
 
-document.querySelector(".secondaryBody").style.height =
+document.querySelector(".mainContent").style.height =
   `calc(100vh - ${document.querySelector("header").clientHeight}px)`;
   
 document.querySelector('#fullscreen').addEventListener('click', () => {

@@ -47,6 +47,14 @@
             <value>/games/adventure.html</value>
         </attribute>
     </category>
+    <category>
+        <icon>fa-solid fa-newspaper</icon>
+        <text>Articles</text>
+        <attribute>
+            <name>href</name>
+            <value>/articles.html</value>
+        </attribute>
+    </category>
    <!-- <category>
         <icon>fa-solid fa-circle-user</icon>
         <text>Game Data</text>

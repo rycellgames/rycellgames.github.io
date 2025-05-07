@@ -154,6 +154,7 @@ body {
 }
 
 a {
+    width: 100%;
     color: rgb(127, 197, 255);
     font-weight: bold;
     text-decoration: none;
@@ -349,7 +350,7 @@ a svg {
     align-items: center;
 }
 
-.secondaryBody {
+.mainContent {
     margin-top: calc(var(--headerHeight) + var(--headerPadding));
     margin-left: var(--sidebarWidth);
     width: calc(100% - var(--sidebarWidth));
