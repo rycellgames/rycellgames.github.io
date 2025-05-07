@@ -154,7 +154,7 @@ body {
 }
 
 a {
-    width: 100%;
+    /*  width: 100%; */
     color: rgb(127, 197, 255);
     font-weight: bold;
     text-decoration: none;
