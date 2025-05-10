@@ -14,10 +14,9 @@ async function loadGames() {
 
         const res = await fetch(config.defaultTagRoute)
         const tags = await res.json()
-        
+        const loadingRelativeGames = loadRelativeGames()
 
         for (const tagName in tags) {
-            console.log(`${tagName}: ${tags[tagName]}`)
 
             const tag = tags[tagName]
 
@@ -27,7 +26,6 @@ async function loadGames() {
 
                 const gameGrid = document.querySelector(`${config.gameListsHolder} .gameGrid[gametag="${tagName}"]`)
 
-                console.log(gameGrid)
                 try {
                     if (gameGrid) {
 
@@ -36,8 +34,6 @@ async function loadGames() {
                         for (gameNum in tag) {
 
                             const game = tag[gameNum]
-
-                            console.log(game)
 
                             gameGrid.innerHTML +=
                             `<a class="gameTile" href="${game.link}">
@@ -54,7 +50,7 @@ async function loadGames() {
         
         }
 
-        loadRelativeGames()
+
 
     } catch (err) {
         console.error(err)
@@ -77,9 +73,7 @@ async function filter(tag) {
 
         const searchTag = tags[inputTag]
 
-        const filtered = games.game.filter(game => game.category.includes(searchTag));
-
-        console.log(filter)
+        const filtered = games.game.filter(game => game.category.includes(searchTag)).sort(() => Math.random() - 0.5);
 
         for (const json in filtered) {
             if (returnedGames.length >= config.tileLimit) return returnedGames;
