@@ -182,11 +182,11 @@ a:hover {
 
     --background-a-clr: rgba(98, 0, 255, 0.459);
 
-   
+
     -webkit-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
     -moz-box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
     box-shadow: -1px -31px 0px -9px var(--background-a-clr) inset;
-    
+
 }
 
 .shareInfo div .link {
@@ -408,7 +408,7 @@ a svg {
 
 .gameTile:hover {
     cursor: pointer;
-    border-color: rgb(0, 102, 255);
+    /* border-color: rgb(0, 102, 255); */
     transform: scale(1.025, 1.025);
 }
 
@@ -502,3 +502,43 @@ a svg {
 .transparent {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+
+/*
+    Loader CSS
+*/
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+}
+
+.loader:after {
+    animation-duration: 4s;
+}
+
+@keyframes l24 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+/*
+ END
+*/

@@ -1,0 +1,70 @@
+{
+  "new": [
+    {
+      "name": "Rooftop Snipers",
+      "identifier": "rooftopsnipers",
+      "thumbnail": "/static/images/games/rooftopsnipers.webp",
+      "link": "/games/rooftopsnipers",
+      "category": "action,snipe,sniper,rooftop",
+      "description": ""
+    },
+    {
+      "name": "Slope 2",
+      "identifier": "slope2",
+      "thumbnail": "/static/images/games/slope2.webp",
+      "link": "/games/slope2",
+      "category": "slope,arcade,action,endless",
+      "description": ""
+    },
+    {
+      "name": "Drift Boss",
+      "identifier": "driftboss",
+      "thumbnail": "/static/images/games/driftboss.webp",
+      "link": "/games/driftboss",
+      "category": "action,arcade",
+      "description": ""
+    },
+    {
+      "name": "Drift Hunters",
+      "identifier": "drifthunters",
+      "thumbnail": "/static/images/games/drifthunters.webp",
+      "link": "/games/drifthunters",
+      "category": "racing",
+      "description": ""
+    }
+  ],
+  "popular": [
+    {
+      "name": "Tunnel Rush",
+      "identifier": "tunnelrush",
+      "thumbnail": "/static/images/games/tunnelrush.webp",
+      "link": "/games/tunnelrush",
+      "category": "action",
+      "description": ""
+    },
+    {
+      "name": "Cookie Clicker",
+      "identifier": "cookieclicker",
+      "thumbnail": "/static/images/games/cookieclicker.webp",
+      "link": "/games/cookieclicker",
+      "category": "arcade,adventure",
+      "description": ""
+    },
+    {
+        "name": "Slope",
+        "identifier": "slope",
+        "thumbnail": "/static/images/games/slope.webp",
+        "link": "/games/slope",
+        "category": "action,arcade",
+        "description": ""
+    },
+    {
+        "name": "Worlds Hardest Game",
+        "identifier": "worldshardestgame",
+        "thumbnail": "/static/images/games/worldshardestgame.webp",
+        "link": "/games/worldshardestgame",
+        "category": "action",
+        "description": ""
+    }
+  ]
+}
