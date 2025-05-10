@@ -45,7 +45,7 @@
         "identifier": "adrenalinechallenge",
         "thumbnail": "/static/images/games/adrenalinechallenge.webp",
         "link": "/games/adrenalinechallenge",
-        "category": "action,racing,arcade",
+        "category": "action,vehicles,arcade",
         "description": ""
       },
       {
@@ -53,7 +53,7 @@
         "identifier": "adventuredrivers",
         "thumbnail": "/static/images/games/adventuredrivers.webp",
         "link": "/games/adventuredrivers",
-        "category": "action,racing",
+        "category": "action,vehicles",
         "description": ""
       },
       {
@@ -197,7 +197,7 @@
         "identifier": "drifthunters",
         "thumbnail": "/static/images/games/drifthunters.webp",
         "link": "/games/drifthunters",
-        "category": "racing",
+        "category": "vehicles",
         "description": ""
       },
       {
@@ -277,7 +277,7 @@
         "identifier": "gopherkart",
         "thumbnail": "/static/images/games/gopherkart.webp",
         "link": "/games/gopherkart",
-        "category": "racing,arcade",
+        "category": "vehicles,arcade",
         "description": ""
       },
       {
@@ -301,7 +301,7 @@
         "identifier": "motox3m2",
         "thumbnail": "/static/images/games/motox3m2.webp",
         "link": "/games/motox3m2",
-        "category": "racing",
+        "category": "vehicles",
         "description": ""
       },
       {
@@ -333,7 +333,7 @@
         "identifier": "racer",
         "thumbnail": "/static/images/games/racer.webp",
         "link": "/games/racer",
-        "category": "racing,arcade",
+        "category": "vehicles,arcade",
         "description": ""
       },
       {
