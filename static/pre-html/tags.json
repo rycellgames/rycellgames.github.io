@@ -1,6 +1,14 @@
 {
   "new": [
     {
+      "name": "Moto X3M",
+      "identifier": "motox3m",
+      "thumbnail": "/static/images/games/motox3m.webp",
+      "link": "/games/motox3m",
+      "category": "vehicles,race,moto,motorbike,x3m",
+      "description": ""
+    },
+    {
       "name": "Rooftop Snipers",
       "identifier": "rooftopsnipers",
       "thumbnail": "/static/images/games/rooftopsnipers.webp",
