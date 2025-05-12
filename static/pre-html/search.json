@@ -1,14 +1,6 @@
 {
     "game": [
       {
-        "name": "Moto X3M",
-        "identifier": "motox3m",
-        "thumbnail": "/static/images/games/motox3m.webp",
-        "link": "/games/motox3m",
-        "category": "vehicles,race,moto,motorbike,x3m",
-        "description": ""
-      },
-      {
         "name": "1",
         "identifier": "1",
         "thumbnail": "/static/images/games/1.webp",
@@ -646,6 +638,13 @@
         "thumbnail": "/static/images/games/rooftopsnipers.webp",
         "link": "/games/rooftopsnipers",
         "category": "action,snipe,sniper,rooftop",
+        "description": ""
+      },
+      {
+        "name": "Tiny Fishing",
+        "identifier": "tiny-fishing",
+        "thumbnail": "/static/images/games/tiny-fishing.webp",
+        "category": "arcade,idle,io",
         "description": ""
       }
     ]

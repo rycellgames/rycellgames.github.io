@@ -1,0 +1,1 @@
+fishing,fish,food,tiny,tiny fishing,arcade,idle,io

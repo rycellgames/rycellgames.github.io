@@ -490,6 +490,13 @@
     <category>arcade,adventure</category>
     <description></description></game>
   <game>
+    <name>Tiny Fishing</name>
+    <identifier>tiny-fishing</identifier>
+    <thumbnail>/static/images/games/tiny-fishing.webp</thumbnail>
+    <link>/games/tiny-fishing</link>
+    <category>fishing,fish,food,tiny,tiny fishing,arcade,idle,io</category>
+    <description></description></game>
+  <game>
     <name>Tunnel Rush</name>
     <identifier>tunnelrush</identifier>
     <thumbnail>/static/images/games/tunnelrush.webp</thumbnail>
