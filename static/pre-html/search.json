@@ -646,6 +646,20 @@
         "thumbnail": "/static/images/games/tiny-fishing.webp",
         "category": "arcade,idle,io",
         "description": ""
+      },
+      {
+        "name": "Funny Shooter",
+        "identifier": "funnyshooter",
+        "thumbnail": "/static/images/games/funnyshooter.webp",
+        "category": "arcade,idle,io,action,shoot,sniper,snipe",
+        "description": ""
+      },
+      {
+        "name": "Funny Shooter 2",
+        "identifier": "funnyshooter2",
+        "thumbnail": "/static/images/games/funnyshooter2.webp",
+        "category": "arcade,idle,io,action,shoot,sniper,snipe",
+        "description": ""
       }
     ]
 }

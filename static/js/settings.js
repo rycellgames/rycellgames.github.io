@@ -1,51 +1,53 @@
 function loadSettings() {
+    const userSettings = localStorage.getItem('settings');
+    const settings = userSettings ? JSON.parse(userSettings) : {};
 
-    const userSettings = localStorage.getItem('settings') | false
-
-    if (!userSettings) {
-        addToggles();
-    }
-    
-    const inputs = document.querySelectorAll('input[setting]')
+    const inputs = document.querySelectorAll('input[setting]');
 
     for (const input of inputs) {
-        
-        const settings = JSON.parse(userSettings);
+        const inputSetting = input.getAttribute('setting');
 
-        const inputSetting = input.getAttribute('setting')
-
-        if (settings[inputSetting]) {
-            if (inputSetting.type === 'checkbox') {
-                inputSetting.checked = settings[inputSetting]
+        if (settings.hasOwnProperty(inputSetting)) {
+            if (input.type === 'checkbox') {
+                input.checked = settings[inputSetting];
+                console.log(`Checkbox '${inputSetting}' set to: ${input.checked}`);
+            } else {
+                input.value = settings[inputSetting];
+                console.log(`Input '${inputSetting}' set to: ${input.value}`);
             }
         } else {
-            inputSetting.value = settings[inputSetting]
+            if (input.type === 'checkbox') {
+                input.checked = input.defaultChecked;
+                console.log(`Checkbox '${inputSetting}' defaulted to: ${input.checked}`);
+            } else {
+                input.value = input.defaultValue;
+                console.log(`Input '${inputSetting}' defaulted to: ${input.value}`);
+            }
         }
     }
+
+    addToggles();
 }
 
 function addToggles() {
-    const inputs = document.querySelectorAll('input[setting]')
-
-    const localStorageSettings = JSON.parse(localStorage.getItem('settings')) || {}
-
-    
+    const inputs = document.querySelectorAll('input[setting]');
+    const localStorageSettings = JSON.parse(localStorage.getItem('settings')) || {};
 
     for (const input of inputs) {
-        
-        input.addEventListener('input', () => { 
-            console.log(input.value)
-            if (input.type === 'checkbox') {
-                localStorageSettings[input.getAttribute('setting')] = input.checked
-                localStorage.setItem('settings', JSON.stringify(localStorageSettings))
-                console.log(localStorageSettings)
-            } else {
-                localStorageSettings[input.getAttribute('setting')] = input.value
-                localStorage.setItem('settings', JSON.stringify(localStorageSettings))
-            }
-        });
+        input.addEventListener('input', () => {
+            const inputSetting = input.getAttribute('setting');
 
+            if (input.type === 'checkbox') {
+                localStorageSettings[inputSetting] = input.checked;
+                console.log(`Checkbox '${inputSetting}' updated to: ${input.checked}`);
+            } else {
+                localStorageSettings[inputSetting] = input.value;
+                console.log(`Input '${inputSetting}' updated to: ${input.value}`);
+            }
+
+            localStorage.setItem('settings', JSON.stringify(localStorageSettings));
+        });
     }
 }
 
-document.addEventListener('DOMContentLoaded', loadSettings)
+document.addEventListener('DOMContentLoaded', loadSettings);
