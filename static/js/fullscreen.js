@@ -1,14 +1,21 @@
 const elem = document.documentElement;
+let settings = JSON.parse(localStorage.getItem('settings')) || {};
+let reloadOnFullscreen = settings.reloadonfullscreen;
+
+if (reloadOnFullscreen === undefined) {
+  reloadOnFullscreen = true;
+}
+
 
 document.addEventListener('fullscreenchange', async () => {
   const iframe = document.querySelector('.gameFrame');
   console.log('fullscreen');
   if (document.fullscreenElement) {
     iframe.requestFullscreen()
-    iframe.contentWindow.location.reload()
+    if (reloadOnFullscreen) {iframe.contentWindow.location.reload()}
   } else {
     iframe.classList.remove('fullscreen');
-    iframe.contentWindow.location.reload()
+    if (reloadOnFullscreen) { iframe.contentWindow.location.reload() }
     try { await screen.orientation.lock('landscape'); } catch(err) {console.log(err)}
   }
 });
@@ -19,7 +26,7 @@ document.querySelector(".mainContent").style.height =
 document.querySelector('#fullscreen').addEventListener('click', () => {
   const iframe = document.querySelector('.gameFrame');
   iframe.requestFullscreen()
-  iframe.contentWindow.location.reload()
+  if (reloadOnFullscreen) {iframe.contentWindow.location.reload()}
   openFullscreen();
 });
 

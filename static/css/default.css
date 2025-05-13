@@ -219,7 +219,7 @@ a:hover {
 
 .shareInfo div .link:focus {
     outline: none;
-    border-color: rgb(98, 0, 255);
+    border-color: #6200ff;
 }
 
 .shareInfo div {
