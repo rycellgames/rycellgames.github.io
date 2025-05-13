@@ -20,7 +20,7 @@
     <link>/games/2048</link>
     <category>puzzle</category>
     <description></description></game>
-      <name>Wordle</name>
+    <game><name>Wordle</name>
     <identifier>wordle</identifier>
     <thumbnail>/static/images/games/wordle.webp</thumbnail>
     <link>/games/wordle</link>
