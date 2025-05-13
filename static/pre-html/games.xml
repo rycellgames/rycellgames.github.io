@@ -20,12 +20,6 @@
     <link>/games/2048</link>
     <category>puzzle</category>
     <description></description></game>
-    <game><name>Wordle</name>
-    <identifier>wordle</identifier>
-    <thumbnail>/static/images/games/wordle.webp</thumbnail>
-    <link>/games/wordle</link>
-    <category>puzzle,wordle,words,smart,office,class,thinking,think</category>
-    <description></description></game>
   <game>
     <name>A dance of Fire and Ice</name>
     <identifier>adanceoffireandice</identifier>
@@ -270,6 +264,13 @@
     <thumbnail>/static/images/games/friendlyfire.webp</thumbnail>
     <link>/games/friendlyfire</link>
     <category>arcade,adventure</category>
+    <description></description></game>
+  <game>
+    <name>Funny Shooter</name>
+    <identifier>funnyshooter</identifier>
+    <thumbnail>/static/images/games/funnyshooter.webp</thumbnail>
+    <link>/games/funnyshooter</link>
+    <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
     <description></description></game>
   <game>
     <name>Gopher Kart</name>
@@ -557,6 +558,13 @@
     <thumbnail>/static/images/games/volleyrandom.webp</thumbnail>
     <link>/games/volleyrandom</link>
     <category>action,sports,arcade</category>
+    <description></description></game>
+  <game>
+    <name>Wordle</name>
+    <identifier>wordle</identifier>
+    <thumbnail>/static/images/games/wordle.webp</thumbnail>
+    <link>/games/wordle</link>
+    <category>puzzle,wordle,words,smart,office,class,thinking,think</category>
     <description></description></game>
   <game>
     <name>Worlds Hardest Game</name>
