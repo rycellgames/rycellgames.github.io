@@ -20,6 +20,12 @@
     <link>/games/2048</link>
     <category>puzzle</category>
     <description></description></game>
+      <name>Wordle</name>
+    <identifier>wordle</identifier>
+    <thumbnail>/static/images/games/wordle.webp</thumbnail>
+    <link>/games/wordle</link>
+    <category>puzzle,wordle,words,smart,office,class,thinking,think</category>
+    <description></description></game>
   <game>
     <name>A dance of Fire and Ice</name>
     <identifier>adanceoffireandice</identifier>
