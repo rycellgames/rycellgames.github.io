@@ -660,6 +660,14 @@
         "thumbnail": "/static/images/games/funnyshooter2.webp",
         "category": "arcade,idle,io,action,shoot,sniper,snipe",
         "description": ""
+      },
+      {
+        "name": "Crossy Road",
+        "identifier": "crossyroad",
+        "thumbnail": "/static/images/games/crossyroad.webp",
+        "link": "/games/crossyroad",
+        "category": "puzzle,road,cross,crossy,funny",
+        "description": ""
       }
     ]
 }

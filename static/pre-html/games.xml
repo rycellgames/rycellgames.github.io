@@ -140,6 +140,13 @@
     <category>arcade,adventure</category>
     <description></description></game>
   <game>
+    <name>Crossy Road</name>
+    <identifier>crossyroad</identifier>
+    <thumbnail>/static/images/games/crossyroad.webp</thumbnail>
+    <link>/games/crossyroad</link>
+    <category>puzzle,road,cross,crossy,funny</category>
+    <description></description></game>
+  <game>
     <name>Cube Field</name>
     <identifier>cubefield</identifier>
     <thumbnail>/static/images/games/cubefield.webp</thumbnail>
@@ -272,13 +279,13 @@
     <link>/games/funnyshooter</link>
     <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
     <description></description></game>
-    <game>
-      <name>Funny Shooter 2</name>
-      <identifier>funnyshooter2</identifier>
-      <thumbnail>/static/images/games/funnyshooter2.webp</thumbnail>
-      <link>/games/funnyshooter2</link>
-      <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
-      <description></description></game>
+  <game>
+    <name>Funny Shooter 2</name>
+    <identifier>funnyshooter2</identifier>
+    <thumbnail>/static/images/games/funnyshooter2.webp</thumbnail>
+    <link>/games/funnyshooter2</link>
+    <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
+    <description></description></game>
   <game>
     <name>Gopher Kart</name>
     <identifier>gopherkart</identifier>
