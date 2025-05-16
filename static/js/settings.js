@@ -17,10 +17,10 @@ function loadSettings() {
             }
         } else {
             if (input.type === 'checkbox') {
-                input.checked = input.defaultChecked;
+                input.checked = input.defaultchecked;
                 console.log(`Checkbox '${inputSetting}' defaulted to: ${input.checked}`);
             } else {
-                input.value = input.defaultValue;
+                input.value = input.defaultvalue;
                 console.log(`Input '${inputSetting}' defaulted to: ${input.value}`);
             }
         }
