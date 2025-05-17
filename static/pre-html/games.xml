@@ -77,6 +77,13 @@
     <category>arcade,action</category>
     <description></description></game>
   <game>
+    <name>Basket Bros</name>
+    <identifier>basketbros</identifier>
+    <thumbnail>/static/images/games/basketbros.webp</thumbnail>
+    <link>/games/basketbros</link>
+    <category>sport,bros,basketball,action,sports,arcade</category>
+    <description></description></game>
+  <game>
     <name>Basket Random</name>
     <identifier>basketrandom</identifier>
     <thumbnail>/static/images/games/basketrandom.webp</thumbnail>
@@ -273,6 +280,13 @@
     <category>arcade,adventure</category>
     <description></description></game>
   <game>
+    <name>Fruit Ninja</name>
+    <identifier>fruitninja</identifier>
+    <thumbnail>/static/images/games/fruitninja.webp</thumbnail>
+    <link>/games/fruitninja</link>
+    <category>action,arcade,fruit,ninja</category>
+    <description></description></game>
+  <game>
     <name>Funny Shooter</name>
     <identifier>funnyshooter</identifier>
     <thumbnail>/static/images/games/funnyshooter.webp</thumbnail>
@@ -294,6 +308,13 @@
     <category>vehicles,arcade</category>
     <description></description></game>
   <game>
+    <name>Helix Jump</name>
+    <identifier>helixjump</identifier>
+    <thumbnail>/static/images/games/helixjump.webp</thumbnail>
+    <link>/games/helixjump</link>
+    <category>arcade,puzzle,helix,jump,drop,ball,ball game</category>
+    <description></description></game>
+  <game>
     <name>Hextris</name>
     <identifier>hextris</identifier>
     <thumbnail>/static/images/games/hextris.webp</thumbnail>
@@ -313,6 +334,20 @@
     <thumbnail>/static/images/games/motox3m.webp</thumbnail>
     <link>/games/motox3m</link>
     <category>vehicles,race,moto,motorbike,x3m</category>
+    <description></description></game>
+  <game>
+    <name>Moto X3M Pool</name>
+    <identifier>motox3m-pool</identifier>
+    <thumbnail>/static/images/games/motox3m-pool.webp</thumbnail>
+    <link>/games/motox3m-pool</link>
+    <category>vehicles,moto,x3m,arcade</category>
+    <description></description></game>
+  <game>
+    <name>Moto X3M Spooky</name>
+    <identifier>motox3m-spooky</identifier>
+    <thumbnail>/static/images/games/motox3m-spooky.webp</thumbnail>
+    <link>/games/motox3m-spooky</link>
+    <category>moto,spooky,arcade,vehicles</category>
     <description></description></game>
   <game>
     <name>Moto X3M2</name>
