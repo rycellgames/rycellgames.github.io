@@ -8,6 +8,7 @@
     --headerHeight: 20px;
     --headerColor: var(--sidebarClr);
     --headerPadding: 10px;
+    --secondaryClr: rgb(32, 32, 32);
 }
 
 html,
@@ -63,7 +64,7 @@ html,
 
 .writing {
     display: flex;
-    width: calc(100% - 10px);
+    width: 100%;
     justify-content: left;
     align-items: center;
     padding-bottom: 10px;
@@ -387,7 +388,7 @@ a svg {
 }
 
 .gameTile {
-    width: 200px;
+    width: 100%;
     height: 200px;
     border: solid;
     border-width: 1px;
@@ -463,10 +464,14 @@ a svg {
 
 .gameGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 210px);
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     gap: 10px;
     margin-top: 20px;
-    width: 99%;
+    width: 98%;
+    /*! align-items: center; */
+    /*! justify-content: center; */
+    /*! margin-inline: auto; */
+    padding: 1%;
 }
 
 .gameGrid a {
@@ -491,8 +496,8 @@ a svg {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, .5);
-    width: 80%;
+    background-color: var(--secondaryClr);
+    width: 98%;
     /* min-height: 30px; */
 }
 
@@ -502,6 +507,10 @@ a svg {
 
 .transparent {
     background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.border {
+    border: none !important;
 }
 
 /*

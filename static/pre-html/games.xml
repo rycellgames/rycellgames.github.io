@@ -329,13 +329,6 @@
     <category>puzzle</category>
     <description></description></game>
   <game>
-    <name>Moto X3M</name>
-    <identifier>motox3m</identifier>
-    <thumbnail>/static/images/games/motox3m.webp</thumbnail>
-    <link>/games/motox3m</link>
-    <category>vehicles,race,moto,motorbike,x3m</category>
-    <description></description></game>
-  <game>
     <name>Moto X3M Pool</name>
     <identifier>motox3m-pool</identifier>
     <thumbnail>/static/images/games/motox3m-pool.webp</thumbnail>
