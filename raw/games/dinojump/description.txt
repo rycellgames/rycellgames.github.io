@@ -1,0 +1,1 @@
+Dino Jump  - a replica of the hidden game from Chrome offline mode. Press Space to start the game online and jump your Dino, use down arrow (↓) to duck.

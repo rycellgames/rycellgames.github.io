@@ -1,0 +1,1 @@
+Vex 7 is a dynamic platformer game that requires players to parkour around the map. Avoid spikes, fire, and electricity in order to make it to the end.

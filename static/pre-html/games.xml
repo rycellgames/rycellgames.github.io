@@ -5,343 +5,343 @@
     <thumbnail>/static/images/games/1.webp</thumbnail>
     <link>/games/1</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>1 is an amazing puzzle game based on the original 2640 puzzle game! The goal is to merge blocks and reach the number 1.</description></game>
   <game>
     <name>10 Minutes Till Dawn</name>
     <identifier>10minutestilldawn</identifier>
     <thumbnail>/static/images/games/10minutestilldawn.webp</thumbnail>
     <link>/games/10minutestilldawn</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>10 Minutes Till Dawn is an action packed game where you need to survive from herds of zombies for 10 minutes!</description></game>
   <game>
     <name>2048</name>
     <identifier>2048</identifier>
     <thumbnail>/static/images/games/2048.webp</thumbnail>
     <link>/games/2048</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>2048 is a puzzle game where you must merge blocks to create the number 2048!</description></game>
   <game>
     <name>A dance of Fire and Ice</name>
     <identifier>adanceoffireandice</identifier>
     <thumbnail>/static/images/games/adanceoffireandice.webp</thumbnail>
     <link>/games/adanceoffireandice</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>A dance Of Fire And Ice (Also shortened as ADOFAI) is a rhythm based game where you must time your clicks to the rythm or when the ball hits the box to progress through the games!</description></game>
   <game>
     <name>A Dark Room</name>
     <identifier>adarkroom</identifier>
     <thumbnail>/static/images/games/adarkroom.webp</thumbnail>
     <link>/games/adarkroom</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>A Dark Room is a text based roleplaying game created in 2013. A great cliffhanger, but hard to explain the experience without playing yourself. Play it now!</description></game>
   <game>
     <name>Adrenaline Challenge</name>
     <identifier>adrenalinechallenge</identifier>
     <thumbnail>/static/images/games/adrenalinechallenge.webp</thumbnail>
     <link>/games/adrenalinechallenge</link>
     <category>action,vehicles,arcade</category>
-    <description></description></game>
+    <description>Adrenaline Challenge Unblocked is a 2D motorbike game similar to MotoX3M where you can do flips and go at extremely high speeds 🚗💥.</description></game>
   <game>
     <name>Adventure Drivers</name>
     <identifier>adventuredrivers</identifier>
     <thumbnail>/static/images/games/adventuredrivers.webp</thumbnail>
     <link>/games/adventuredrivers</link>
     <category>action,vehicles</category>
-    <description></description></game>
+    <description>Adventure Drivers is a fast-paced action packed 2D racing game.</description></game>
   <game>
     <name>Astray</name>
     <identifier>astray</identifier>
     <thumbnail>/static/images/games/astray.webp</thumbnail>
     <link>/games/astray</link>
     <category>puzzle,adventure</category>
-    <description></description></game>
+    <description>Astray is a puzzle/maze game where you must control the wooden ball and escape!</description></game>
   <game>
     <name>Back Country</name>
     <identifier>backcountry</identifier>
     <thumbnail>/static/images/games/backcountry.webp</thumbnail>
     <link>/games/backcountry</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Back Country Unblocked is a popular online game that takes players on an adventure through the wilderness.</description></game>
   <game>
     <name>Bad Ice Cream</name>
     <identifier>badicecream</identifier>
     <thumbnail>/static/images/games/badicecream.webp</thumbnail>
     <link>/games/badicecream</link>
     <category>arcade,action</category>
-    <description></description></game>
+    <description>Bad Ice-Cream is a fun 2-player puzzle game where you play as an Ice Cream. Choose a flavor, and add fruit to your ice cream!</description></game>
   <game>
     <name>Bad Ice Cream 2</name>
     <identifier>badicecream2</identifier>
     <thumbnail>/static/images/games/badicecream2.webp</thumbnail>
     <link>/games/badicecream2</link>
     <category>arcade,action</category>
-    <description></description></game>
+    <description>Bad Ice-Cream 2 is a 2-player puzzle game developed by Nitrome. Choose a flavor, and add fruit to your ice cream!</description></game>
   <game>
     <name>Basket Bros</name>
     <identifier>basketbros</identifier>
     <thumbnail>/static/images/games/basketbros.webp</thumbnail>
     <link>/games/basketbros</link>
     <category>sport,bros,basketball,action,sports,arcade</category>
-    <description></description></game>
+    <description>Basket Bros is a fun, fast-paced 1 on 1 basketball game with lots of action. Pick from a variety of characters and let the play begin. Go for crazy dunks.</description></game>
   <game>
     <name>Basket Random</name>
     <identifier>basketrandom</identifier>
     <thumbnail>/static/images/games/basketrandom.webp</thumbnail>
     <link>/games/basketrandom</link>
     <category>arcade,sports</category>
-    <description></description></game>
+    <description>Basket Random is a chaotic 2-player arcade sports game with unpredictable physics. Bounce and battle for the ball across wild courts!</description></game>
   <game>
     <name>BitLife</name>
     <identifier>bitlife</identifier>
     <thumbnail>/static/images/games/bitlife.webp</thumbnail>
     <link>/games/bitlife</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Bitlife is a fun and exciting simulator game where you can decide everything for yourself. Live your life as you want in this life simulator game!</description></game>
   <game>
     <name>Bounce Back</name>
     <identifier>bounceback</identifier>
     <thumbnail>/static/images/games/bounceback.webp</thumbnail>
     <link>/games/bounceback</link>
     <category>adventure,arcade</category>
-    <description></description></game>
+    <description>In Bounce Back game, you'll face a challenging yet rewarding experience with tight controls and a well-designed difficulty curve!</description></game>
   <game>
     <name>Boxing Random</name>
     <identifier>boxingrandom</identifier>
     <thumbnail>/static/images/games/boxingrandom.webp</thumbnail>
     <link>/games/boxingrandom</link>
     <category>sports,arcade</category>
-    <description></description></game>
+    <description>Boxing Random - no need for complex controls! With just one button, unleash a flurry of punches and knock your opponent in this sports-themed game!</description></game>
   <game>
     <name>Break Lock</name>
     <identifier>breaklock</identifier>
     <thumbnail>/static/images/games/breaklock.webp</thumbnail>
     <link>/games/breaklock</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Breaklock.  A hybrid of Mastermind and the Android pattern lock. A game you will love to hate. Empty circle means correct location but wrong order.</description></game>
   <game>
     <name>Breakout</name>
     <identifier>breakout</identifier>
     <thumbnail>/static/images/games/breakout.webp</thumbnail>
     <link>/games/breakout</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>Atari Breakout is an updated version of the legendary Breakout game by Atari. The aim of the game is to bat the ball at the colored blocks until there are none left!</description></game>
   <game>
     <name>Chess</name>
     <identifier>chess</identifier>
     <thumbnail>/static/images/games/chess.webp</thumbnail>
     <link>/games/chess</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Work your brain with this online version of the classic game Chess. Fun &amp; challenging for kids &amp; adults, play against a friend or the computer.</description></game>
   <game>
     <name>Connect 3</name>
     <identifier>connect3</identifier>
     <thumbnail>/static/images/games/connect3.webp</thumbnail>
     <link>/games/connect3</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Work your brain with this online Connect 3. Fun &amp; challenging for kids &amp; adults, play against a friend or the computer.</description></game>
   <game>
     <name>Cookie Clicker</name>
     <identifier>cookieclicker</identifier>
     <thumbnail>/static/images/games/cookieclicker.webp</thumbnail>
     <link>/games/cookieclicker</link>
     <category>arcade,adventure</category>
-    <description></description></game>
+    <description>Cookie Clicker is a fun and addictive idle clicker game to play to kill time!</description></game>
   <game>
     <name>Crossy Road</name>
     <identifier>crossyroad</identifier>
     <thumbnail>/static/images/games/crossyroad.webp</thumbnail>
     <link>/games/crossyroad</link>
     <category>puzzle,road,cross,crossy,funny</category>
-    <description></description></game>
+    <description>Crossy Road is the 8-bit endless arcade hopper that started it all. Collect custom characters and navigate freeways, railroads, rivers and much more.</description></game>
   <game>
     <name>Cube Field</name>
     <identifier>cubefield</identifier>
     <thumbnail>/static/images/games/cubefield.webp</thumbnail>
     <link>/games/cubefield</link>
     <category>action</category>
-    <description></description></game>
+    <description>Cubefield is a fast-paced endless running game that tests your ability to dodge obstacles at high speed.</description></game>
   <game>
     <name>Dino Jump</name>
     <identifier>dinojump</identifier>
     <thumbnail>/static/images/games/dinojump.webp</thumbnail>
     <link>/games/dinojump</link>
     <category>arcade,action</category>
-    <description></description></game>
+    <description>Dino Jump  - a replica of the hidden game from Chrome offline mode. Press Space to start the game online and jump your Dino, use down arrow (↓) to duck.</description></game>
   <game>
     <name>Doodle Jump</name>
     <identifier>doodlejump</identifier>
     <thumbnail>/static/images/games/doodlejump.webp</thumbnail>
     <link>/games/doodlejump</link>
     <category>action</category>
-    <description></description></game>
+    <description>Doodle Jump is an iconic platformer game where players guide a small, four-legged character called “The Doodler,” and jump continuously on platforms!</description></game>
   <game>
     <name>Drift Boss</name>
     <identifier>driftboss</identifier>
     <thumbnail>/static/images/games/driftboss.webp</thumbnail>
     <link>/games/driftboss</link>
     <category>action,arcade</category>
-    <description></description></game>
+    <description>Drift Boss is a casual one-click driving game where you drive your car around very tricky corners and over bumps, aiming to reach what seems like an infinite end! </description></game>
   <game>
     <name>Drift Hunters</name>
     <identifier>drifthunters</identifier>
     <thumbnail>/static/images/games/drifthunters.webp</thumbnail>
     <link>/games/drifthunters</link>
     <category>vehicles</category>
-    <description></description></game>
+    <description>Drift Hunters is a free-to-play car 3D game that lets you experience the art of drifting with an impressive range of tuned-up cars and dynamic tracks.</description></game>
   <game>
     <name>Duck Life</name>
     <identifier>ducklife</identifier>
     <thumbnail>/static/images/games/ducklife.webp</thumbnail>
     <link>/games/ducklife</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Play Duck Life, the first of the historic franchise. Train your duck so they can win races and save the farm, then teach them how to swim and fly.</description></game>
   <game>
     <name>Duck Life 2</name>
     <identifier>ducklife2</identifier>
     <thumbnail>/static/images/games/ducklife2.webp</thumbnail>
     <link>/games/ducklife2</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Duck Life 2: World Champion is the second of the great Duck Life series. Earn upgrades to help your duck become a world champion.</description></game>
   <game>
     <name>Duck Life 3</name>
     <identifier>ducklife3</identifier>
     <thumbnail>/static/images/games/ducklife3.webp</thumbnail>
     <link>/games/ducklife3</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Collect coins and purchase upgrades to help your duck become world champion in Duck Life 3. This new game requires a higher level of strategy to win.</description></game>
   <game>
     <name>Duck Life 4</name>
     <identifier>ducklife4</identifier>
     <thumbnail>/static/images/games/ducklife4.webp</thumbnail>
     <link>/games/ducklife4</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Duck Life 4 is one of the newest and most fun games in the series. Feed your duck and attain accessories to train them to be the best that they can be.</description></game>
   <game>
     <name>Evil Glitch</name>
     <identifier>evilglitch</identifier>
     <thumbnail>/static/images/games/evilglitch.webp</thumbnail>
     <link>/games/evilglitch</link>
     <category>action,arcade</category>
-    <description></description></game>
+    <description>Strange glitches appear in your dimension, could you stop them to assimilate your world?</description></game>
   <game>
     <name>Factory Balls Forever</name>
     <identifier>factoryballsforever</identifier>
     <thumbnail>/static/images/games/factoryballsforever.webp</thumbnail>
     <link>/games/factoryballsforever</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Factory Balls Forever is a puzzle game where you have to color the balls correctly! Use different tools to cover up the ball before start painting over it.</description></game>
   <game>
     <name>Fireboy And Watergirl Forest Temple</name>
     <identifier>fireboyandwatergirlintheforesttemple</identifier>
     <thumbnail>/static/images/games/fireboyandwatergirlintheforesttemple.webp</thumbnail>
     <link>/games/fireboyandwatergirlintheforesttemple</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>There are 32 levels in Fireboy and Watergirl in the Forest Temple. Each level gets progressively harder, with longer jumps and trickier puzzles.</description></game>
   <game>
     <name>Flappy Bird</name>
     <identifier>flappybird</identifier>
     <thumbnail>/static/images/games/flappybird.webp</thumbnail>
     <link>/games/flappybird</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>Play flappy bird here online for free. Click on the screen, or use your spacebar to get started. Fly the bird as far as you can without hitting a pipe.</description></game>
   <game>
     <name>FNAF</name>
     <identifier>fnaf</identifier>
     <thumbnail>/static/images/games/fnaf.webp</thumbnail>
     <link>/games/fnaf</link>
     <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
-    <description></description></game>
+    <description>FNAF is a survival horror game designed with simple gameplay.</description></game>
   <game>
     <name>FNAF 2</name>
     <identifier>fnaf2</identifier>
     <thumbnail>/static/images/games/fnaf2.webp</thumbnail>
     <link>/games/fnaf2</link>
     <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
-    <description></description></game>
+    <description>FNAF 2 (Five Nights at Freddy's 2) is the second chapter of the popular horror game FNAF.</description></game>
   <game>
     <name>FNAF 3</name>
     <identifier>fnaf3</identifier>
     <thumbnail>/static/images/games/fnaf3.webp</thumbnail>
     <link>/games/fnaf3</link>
     <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
-    <description></description></game>
+    <description>Five Nights at Freddy's 3 is a paranormal survival horror video game in the FNAF series developed and published by Scott Cawthon.</description></game>
   <game>
     <name>FNAF 4</name>
     <identifier>fnaf4</identifier>
     <thumbnail>/static/images/games/fnaf4.webp</thumbnail>
     <link>/games/fnaf4</link>
     <category>adventure,horror,five,nights,freddies,five nights at freddies,freddy</category>
-    <description></description></game>
+    <description>This game series is back with its horror number four. You will again have to survive 5 nights among dangerous characters.</description></game>
   <game>
     <name>Friendly Fire</name>
     <identifier>friendlyfire</identifier>
     <thumbnail>/static/images/games/friendlyfire.webp</thumbnail>
     <link>/games/friendlyfire</link>
     <category>arcade,adventure</category>
-    <description></description></game>
+    <description>Friendly Fire is a story-driven platform-based adventure game with a lot of love and passion put into it. </description></game>
   <game>
     <name>Fruit Ninja</name>
     <identifier>fruitninja</identifier>
     <thumbnail>/static/images/games/fruitninja.webp</thumbnail>
     <link>/games/fruitninja</link>
     <category>action,arcade,fruit,ninja</category>
-    <description></description></game>
+    <description>Choose your blade, unleash your inner ninja! Slice fruit, don't slice bombs – that's all you need to know to get started with addictive Fruit Ninja action!</description></game>
   <game>
     <name>Funny Shooter</name>
     <identifier>funnyshooter</identifier>
     <thumbnail>/static/images/games/funnyshooter.webp</thumbnail>
     <link>/games/funnyshooter</link>
     <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
-    <description></description></game>
+    <description>Funny Shooter is a fun FPS game where you fight hordes of absurd enemies! Use various weapons to slay these bizarre beings and upgrade your weapons arsenal as you progress.</description></game>
   <game>
     <name>Funny Shooter 2</name>
     <identifier>funnyshooter2</identifier>
     <thumbnail>/static/images/games/funnyshooter2.webp</thumbnail>
     <link>/games/funnyshooter2</link>
     <category>action,snipe,ak,fun,sniper,funny shooter,fr,gang</category>
-    <description></description></game>
+    <description>Funny Shooter 2 is a quirky first-person shooter that immerses players in a comical and chaotic world. </description></game>
   <game>
     <name>Gopher Kart</name>
     <identifier>gopherkart</identifier>
     <thumbnail>/static/images/games/gopherkart.webp</thumbnail>
     <link>/games/gopherkart</link>
     <category>vehicles,arcade</category>
-    <description></description></game>
+    <description>Gopher Kart Unblocked is an terrific Driving &amp; Racing browser game. </description></game>
   <game>
     <name>Helix Jump</name>
     <identifier>helixjump</identifier>
     <thumbnail>/static/images/games/helixjump.webp</thumbnail>
     <link>/games/helixjump</link>
     <category>arcade,puzzle,helix,jump,drop,ball,ball game</category>
-    <description></description></game>
+    <description>Helix Jump is an addictive arcade-style game where players guide a ball through gaps in a series of rotating helix-shaped platforms to descend as far as possible. </description></game>
   <game>
     <name>Hextris</name>
     <identifier>hextris</identifier>
     <thumbnail>/static/images/games/hextris.webp</thumbnail>
     <link>/games/hextris</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Hextris is an addictive puzzle game inspired by Tetris.</description></game>
   <game>
     <name>Konnekt</name>
     <identifier>konnekt</identifier>
     <thumbnail>/static/images/games/konnekt.webp</thumbnail>
     <link>/games/konnekt</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Konnekt is a simple Real-Time-Strategy game. A virus is spreading in your system and threatening to take it offline.</description></game>
   <game>
     <name>Moto X3M Pool</name>
     <identifier>motox3m-pool</identifier>
     <thumbnail>/static/images/games/motox3m-pool.webp</thumbnail>
     <link>/games/motox3m-pool</link>
     <category>vehicles,moto,x3m,arcade</category>
-    <description></description></game>
+    <description>Grab your bike, master the jumps and pull off sweet flips in Moto X3M Pool Party. Race to the finish line and get all 3 stars.</description></game>
   <game>
     <name>Moto X3M Spooky</name>
     <identifier>motox3m-spooky</identifier>
     <thumbnail>/static/images/games/motox3m-spooky.webp</thumbnail>
     <link>/games/motox3m-spooky</link>
     <category>moto,spooky,arcade,vehicles</category>
-    <description></description></game>
+    <description>Make your way through a frightening Halloween landscape in Moto X3M: Spooky Land. Memorize each course to record your best time.</description></game>
   <game>
     <name>Moto X3M2</name>
     <identifier>motox3m2</identifier>
@@ -355,278 +355,278 @@
     <thumbnail>/static/images/games/ovo.webp</thumbnail>
     <link>/games/ovo</link>
     <category>action</category>
-    <description></description></game>
+    <description>OvO is a fast-paced platformer where you use precise parkour and free running skills to complete each level. The levels feature increasingly tricky obstacles and you’ll need to do various jumps, slides, and dives to avoid them.</description></game>
   <game>
     <name>Pacman</name>
     <identifier>pacman</identifier>
     <thumbnail>/static/images/games/pacman.webp</thumbnail>
     <link>/games/pacman</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>Google Pac-Man on Chromebook offers nostalgic fun, combining classic gaming with modern accessibility.</description></game>
   <game>
     <name>Pushback</name>
     <identifier>pushback</identifier>
     <thumbnail>/static/images/games/pushback.webp</thumbnail>
     <link>/games/pushback</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>In Push Back you create currents to help the stranded boats get back to the mainland. This game uses fluid dynamics to simulate the water!</description></game>
   <game>
     <name>Racer</name>
     <identifier>racer</identifier>
     <thumbnail>/static/images/games/racer.webp</thumbnail>
     <link>/games/racer</link>
     <category>vehicles,arcade</category>
-    <description></description></game>
+    <description>Racer is a lightweight arcade racing game you can play anywhere!</description></game>
   <game>
     <name>Radius Raid</name>
     <identifier>radiusraid</identifier>
     <thumbnail>/static/images/games/radiusraid.webp</thumbnail>
     <link>/games/radiusraid</link>
     <category>arcade,action</category>
-    <description></description></game>
+    <description>Radius Raid is a space themed shoot 'em up where you must blast away unrelenting enemies before they destroy you.</description></game>
   <game>
     <name>Retro Bowl</name>
     <identifier>retrobowl</identifier>
     <thumbnail>/static/images/games/retrobowl.webp</thumbnail>
     <link>/games/retrobowl</link>
     <category>arcade,sports,action</category>
-    <description></description></game>
+    <description>Retro Bowl is an American style football game created by New Star Games. Are you ready to manage your dream team into victory? </description></game>
   <game>
     <name>Restrohaunt</name>
     <identifier>retrohaunt</identifier>
     <thumbnail>/static/images/games/retrohaunt.webp</thumbnail>
     <link>/games/retrohaunt</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>As Detective Clay, explore creepy retro arcades using your trusty camera. Solve intricate puzzles, manage fleeting memories, and uncover the Temporal Thief's enigma. </description></game>
   <game>
     <name>Riddle School</name>
     <identifier>riddleschool</identifier>
     <thumbnail>/static/images/games/riddleschool.webp</thumbnail>
     <link>/games/riddleschool</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Riddle School is a point-and-click escape game developed by JonBro.</description></game>
   <game>
     <name>Riddle School 2</name>
     <identifier>riddleschool2</identifier>
     <thumbnail>/static/images/games/riddleschool2.webp</thumbnail>
     <link>/games/riddleschool2</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Help Phil to escape the school in this sequel of Riddle School!</description></game>
   <game>
     <name>Riddle School 3</name>
     <identifier>riddleschool3</identifier>
     <thumbnail>/static/images/games/riddleschool3.webp</thumbnail>
     <link>/games/riddleschool3</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>In Riddle School 3, your mission is to help Phil escape the classroom and eventually the school.</description></game>
   <game>
     <name>Riddle School 4</name>
     <identifier>riddleschool4</identifier>
     <thumbnail>/static/images/games/riddleschool4.webp</thumbnail>
     <link>/games/riddleschool4</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Riddle School 4 is the 4th game in the Riddle School series.</description></game>
   <game>
     <name>Riddle School 5</name>
     <identifier>riddleschool5</identifier>
     <thumbnail>/static/images/games/riddleschool5.webp</thumbnail>
     <link>/games/riddleschool5</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Riddle School 5 -  Escape each new room as you hunt the rooms for objects to help you escape!</description></game>
   <game>
     <name>Roadblocks</name>
     <identifier>roadblocks</identifier>
     <thumbnail>/static/images/games/roadblocks.webp</thumbnail>
     <link>/games/roadblocks</link>
     <category>puzzle</category>
-    <description></description></game>
+    <description>Connect the map in this road building puzzle game. Ten levels of increasing difficulty, two map styles, and a whole bunch of road blocks.</description></game>
   <game>
     <name>Rooftop Snipers</name>
     <identifier>rooftopsnipers</identifier>
     <thumbnail>/static/images/games/rooftopsnipers.webp</thumbnail>
     <link>/games/rooftopsnipers</link>
     <category>action,snipe,sniper,rooftop</category>
-    <description></description></game>
+    <description>Rooftop Snipers is a pixel-style shooting game where you have to shoot famous characters off of the roof! </description></game>
   <game>
     <name>Run</name>
     <identifier>run</identifier>
     <thumbnail>/static/images/games/run.webp</thumbnail>
     <link>/games/run</link>
     <category>run,endless,adventure</category>
-    <description></description></game>
+    <description>Run is a skill game that is enhanced with qualities like timing, fast-paced gameplay, and having to figure out the route in a puzzle-like fashion.</description></game>
   <game>
     <name>Run 2</name>
     <identifier>run2</identifier>
     <thumbnail>/static/images/games/run2.webp</thumbnail>
     <link>/games/run2</link>
     <category>run,endless,adventure</category>
-    <description></description></game>
+    <description>Play Run 2, an amazing game that requires tremendous concentration and memorization as you run (or skate) through the 3-dimensional courses.</description></game>
   <game>
     <name>Run 3</name>
     <identifier>run3</identifier>
     <thumbnail>/static/images/games/run3.webp</thumbnail>
     <link>/games/run3</link>
     <category>run,endless,adventure</category>
-    <description></description></game>
+    <description>Run 3 is a classic where you swerve through space in a race to the finish. Play hundreds of new levels in this fast-paced platformer.</description></game>
   <game>
     <name>Slope</name>
     <identifier>slope</identifier>
     <thumbnail>/static/images/games/slope.webp</thumbnail>
     <link>/games/slope</link>
     <category>action,arcade</category>
-    <description></description></game>
+    <description>Play Slope Unblocked, an endless space run game. Drive a ball in the 3D running game in Slope Game. Easy to controls, high speed, and addictive gameplay.</description></game>
   <game>
     <name>Slope 2</name>
     <identifier>slope2</identifier>
     <thumbnail>/static/images/games/slope2.webp</thumbnail>
     <link>/games/slope2</link>
     <category>slope,arcade,action,endless</category>
-    <description></description></game>
+    <description>Slope 2 is an addictive endless-running game set in a futuristic space where you control an auto-running ball as it travels down a 3D course.</description></game>
   <game>
     <name>Snake</name>
     <identifier>snake</identifier>
     <thumbnail>/static/images/games/snake.webp</thumbnail>
     <link>/games/snake</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>Play snake game online, the classic retro arcade game. Chase after the apples but don't hit the wall, or eat your own tail. How long can you survive?</description></game>
   <game>
     <name>Snow Rider 3D</name>
     <identifier>snowrider3d</identifier>
     <thumbnail>/static/images/games/snowrider3d.webp</thumbnail>
     <link>/games/snowrider3d</link>
     <category>action</category>
-    <description></description></game>
+    <description>Snow Rider 3D: Race down snowy hills, dodge obstacles, collect gifts to unlock cool sleds, and rack up stars in this thrilling first‑person winter adventure!</description></game>
   <game>
     <name>Soccer Random</name>
     <identifier>soccerrandom</identifier>
     <thumbnail>/static/images/games/soccerrandom.webp</thumbnail>
     <link>/games/soccerrandom</link>
     <category>action,sports</category>
-    <description></description></game>
+    <description>Soccer Random is a great two-player game in which players can enjoy many exciting matches. Let's make a realistic kick and head the ball toward the goal!</description></game>
   <game>
     <name>Space Company</name>
     <identifier>spacecompany</identifier>
     <thumbnail>/static/images/games/spacecompany.webp</thumbnail>
     <link>/games/spacecompany</link>
     <category>adventure</category>
-    <description></description></game>
+    <description>Space Company is a science-fiction incremental game where you start from humble beginnings on Earth, working your way up to travelling between star systems and building Dyson Spheres and pretty much colonising the entire galaxy(ies?)</description></game>
   <game>
     <name>Surf</name>
     <identifier>surf</identifier>
     <thumbnail>/static/images/games/surf.webp</thumbnail>
     <link>/games/surf</link>
     <category>action,arcade</category>
-    <description></description></game>
+    <description>Let's surf. Use to select a surfer and spacebar to start surfing. Game settings. New game. Game mode. Let's surf. Best score: 0 m. High visiblity mode.</description></game>
   <game>
     <name>Tetris</name>
     <identifier>tetris</identifier>
     <thumbnail>/static/images/games/tetris.webp</thumbnail>
     <link>/games/tetris</link>
     <category>arcade</category>
-    <description></description></game>
+    <description>Simply the best free Tetris style game on the web. Enjoy a classic retro block game where the goal is to fit falling Tetrominoes into complete lines.</description></game>
   <game>
     <name>The Chromain Incident</name>
     <identifier>thechromaincident</identifier>
     <thumbnail>/static/images/games/thechromaincident.webp</thumbnail>
     <link>/games/thechromaincident</link>
     <category>arcade,adventure</category>
-    <description></description></game>
+    <description>Raid their colorless lair and vanquish them all, restoring the world to it's technicolor glory. A twin-stick shooter playable with gamepad or keyboard+mouse.</description></game>
   <game>
     <name>There is No Game</name>
     <identifier>thereisnogame</identifier>
     <thumbnail>/static/images/games/thereisnogame.webp</thumbnail>
     <link>/games/thereisnogame</link>
     <category>arcade,adventure</category>
-    <description></description></game>
+    <description>Play There Is No Game on the most popular website for free online games!</description></game>
   <game>
     <name>Tiny Fishing</name>
     <identifier>tiny-fishing</identifier>
     <thumbnail>/static/images/games/tiny-fishing.webp</thumbnail>
     <link>/games/tiny-fishing</link>
     <category>fishing,fish,food,tiny,tiny fishing,arcade,idle,io</category>
-    <description></description></game>
+    <description>Tiny Fishing is a fun fishing game developed by Mad Buffer. Drag your mouse to catch the fish, and remember to upgrade your gear to get more and bigger fish.</description></game>
   <game>
     <name>Tunnel Rush</name>
     <identifier>tunnelrush</identifier>
     <thumbnail>/static/images/games/tunnelrush.webp</thumbnail>
     <link>/games/tunnelrush</link>
     <category>action</category>
-    <description></description></game>
+    <description>Tunnel Rush online is the ultimate 3D single-player experience. Blaze your way through caves and tunnels.</description></game>
   <game>
     <name>Underrun</name>
     <identifier>underrun</identifier>
     <thumbnail>/static/images/games/underrun.webp</thumbnail>
     <link>/games/underrun</link>
     <category>action,adventure,arcade</category>
-    <description></description></game>
+    <description>A fully working 3D twin-stick shooter game. Excellent 3D pixelated graphics, great SFX &amp; music, and fits well with the competition theme.</description></game>
   <game>
     <name>Vex 3</name>
     <identifier>vex3</identifier>
     <thumbnail>/static/images/games/vex3.webp</thumbnail>
     <link>/games/vex3</link>
     <category>action</category>
-    <description></description></game>
+    <description>Vex 3 is a challenging platformer game that pushes players to their limits with awesome stunts and crazy obstacles.</description></game>
   <game>
     <name>Vex 4</name>
     <identifier>vex4</identifier>
     <thumbnail>/static/images/games/vex4.webp</thumbnail>
     <link>/games/vex4</link>
     <category>action,adventure</category>
-    <description></description></game>
+    <description>Vex 4 is an exhilarating platformer game with challenging levels and precise controls. </description></game>
   <game>
     <name>Vex 5</name>
     <identifier>vex5</identifier>
     <thumbnail>/static/images/games/vex5.webp</thumbnail>
     <link>/games/vex5</link>
     <category>action,adventure</category>
-    <description></description></game>
+    <description>Vex 5 is an exhilarating and challenging online platform game that takes the player on a thrilling journey through a series of obstacle courses.</description></game>
   <game>
     <name>Vex 6</name>
     <identifier>vex6</identifier>
     <thumbnail>/static/images/games/vex6.webp</thumbnail>
     <link>/games/vex6</link>
     <category>action,adventure</category>
-    <description></description></game>
+    <description>Vex 6 Unblocked on Chromebook offers adrenaline-fueled platforming.</description></game>
   <game>
     <name>Vex 7</name>
     <identifier>vex7</identifier>
     <thumbnail>/static/images/games/vex7.webp</thumbnail>
     <link>/games/vex7</link>
     <category>action,adventure</category>
-    <description></description></game>
+    <description>Vex 7 is a dynamic platformer game that requires players to parkour around the map. Avoid spikes, fire, and electricity in order to make it to the end.</description></game>
   <game>
     <name>Volley Random</name>
     <identifier>volleyrandom</identifier>
     <thumbnail>/static/images/games/volleyrandom.webp</thumbnail>
     <link>/games/volleyrandom</link>
     <category>action,sports,arcade</category>
-    <description></description></game>
+    <description>Volley Random is a fun two-player sports volleyball game where the simple controls meet chaotic and wacky physics. </description></game>
   <game>
     <name>Wordle</name>
     <identifier>wordle</identifier>
     <thumbnail>/static/images/games/wordle.webp</thumbnail>
     <link>/games/wordle</link>
     <category>puzzle,wordle,words,smart,office,class,thinking,think</category>
-    <description></description></game>
+    <description>Guess the WORDLE in 6 attempts. Each guess must be a valid 5 letter word. Hit the Enter button to submit an attempt.</description></game>
   <game>
     <name>Worlds Hardest Game</name>
     <identifier>worldshardestgame</identifier>
     <thumbnail>/static/images/games/worldshardestgame.webp</thumbnail>
     <link>/games/worldshardestgame</link>
     <category>action</category>
-    <description></description></game>
+    <description>Use the arrow keys to move the red square to the end zone. Collect the yellow coins while avoiding the blue balls to pass the level.</description></game>
   <game>
     <name>Worlds Hardest Game 2</name>
     <identifier>worldshardestgame2</identifier>
     <thumbnail>/static/images/games/worldshardestgame2.webp</thumbnail>
     <link>/games/worldshardestgame2</link>
     <category>action</category>
-    <description></description></game>
+    <description>Use the arrow keys to move the red square through the maze of balls to the end zone. You have to avoid the blue balls while collecting all the yellow balls.</description></game>
   <game>
     <name>xx142b2.exe</name>
     <identifier>xx142b2.exe</identifier>
     <thumbnail>/static/images/games/xx142b2.exe.webp</thumbnail>
     <link>/games/xx142b2.exe</link>
     <category>action,arcade</category>
-    <description></description></game>
+    <description>You are an AI weaponized virus built to infiltrate the alien network and deactivate all power generators and weapon systems.</description></game>
 </games>

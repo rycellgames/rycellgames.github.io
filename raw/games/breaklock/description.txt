@@ -1,0 +1,1 @@
+Breaklock.  A hybrid of Mastermind and the Android pattern lock. A game you will love to hate. Empty circle means correct location but wrong order.

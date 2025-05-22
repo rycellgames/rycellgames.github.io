@@ -1,0 +1,1 @@
+Guess the WORDLE in 6 attempts. Each guess must be a valid 5 letter word. Hit the Enter button to submit an attempt.

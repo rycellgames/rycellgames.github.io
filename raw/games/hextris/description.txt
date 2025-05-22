@@ -1,0 +1,1 @@
+Hextris is an addictive puzzle game inspired by Tetris.

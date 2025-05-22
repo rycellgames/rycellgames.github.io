@@ -1,0 +1,1 @@
+Konnekt is a simple Real-Time-Strategy game. A virus is spreading in your system and threatening to take it offline.

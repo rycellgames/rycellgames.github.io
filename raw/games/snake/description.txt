@@ -1,0 +1,1 @@
+Play snake game online, the classic retro arcade game. Chase after the apples but don't hit the wall, or eat your own tail. How long can you survive?
