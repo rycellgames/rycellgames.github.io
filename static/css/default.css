@@ -21,6 +21,7 @@ html,
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: var(--searchBarClr);
 }
 
 .mainContent footer img {
