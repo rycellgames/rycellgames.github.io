@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
 import { GridCard } from "@/lib/games/cards/gridCard";
 import { SearchIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import NoGamesFound from "./NoGamesFound";
 
 type gameData = {
   name?: string;
@@ -10,16 +11,25 @@ type gameData = {
   categories?: string;
   exclusiveTags?: string[];
   folder?: string;
-}
+};
 
 type functionData = {
-  games: gameData[]
-}
+  games: gameData[];
+};
 
 export default function SearchClient({ games }: functionData) {
   const [searchTerm, setSearchTerm] = useState("");
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-    const filteredGames = games.filter(game =>
+  const handleSearch = (value: string) => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+
+    timerRef.current = setTimeout(() => {
+      setSearchTerm(value);
+    }, 300);
+  };
+
+  const filteredGames = games.filter((game) =>
     game.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -30,17 +40,22 @@ export default function SearchClient({ games }: functionData) {
         <input
           className="grow outline-none"
           placeholder="Search..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => handleSearch(e.target.value)}
         />
       </div>
 
-      <div className="grid grid-cols-6 not-md:grid-cols-4 gap-5 mt-5">
-        {filteredGames.map((game) => {
-          if (!game.name || !game.folder) return null;
-          return <GridCard name={game.name} id={game.folder} key={game.folder} />;
-        })}
-      </div>
+      {filteredGames.length ? (
+        <div className="grid grid-cols-6 not-md:grid-cols-4 gap-5 mt-5">
+          {filteredGames.map((game) => {
+            if (!game.name || !game.folder) return null;
+            return (
+              <GridCard name={game.name} id={game.folder} key={game.folder} />
+            );
+          })}
+        </div>
+      ) : (
+        <NoGamesFound />
+      )}
     </>
-  )
+  );
 }
