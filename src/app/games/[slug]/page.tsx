@@ -241,7 +241,7 @@ export default async function GamePage({ params }: { params: any }) {
                             <summary>Tags</summary>
                             <div className="flex flex-col">
                                 {game.categories.map((tag: string) => {
-                                    return <a href={`/games/${tag}`}>{tag.trim().charAt(0).toUpperCase() + tag.trim().slice(1)}</a>
+                                    return <a href={`/games/${tag}`} key={tag}>{tag.trim().charAt(0).toUpperCase() + tag.trim().slice(1)}</a>
                                 })}
                             </div>
                         </details>
