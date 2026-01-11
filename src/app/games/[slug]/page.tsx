@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { GridCard } from "@/lib/games/cards/gridCard";
 import { marked } from "marked";
 import { title } from "process";
+import { getMdByGameSlug } from "@/lib/games/logic/fetch";
 
 type game = {
     name: string;
@@ -227,6 +228,8 @@ export default async function GamePage({ params }: { params: any }) {
     }
 
     const game = await getGameData(slug);
+    const gameMarkdown = getMdByGameSlug(slug);
+
     return (
         <div className="p-5 flex flex-col gap-5">
             <title>{`${game.name} | Rycell Games`}</title>
@@ -234,7 +237,7 @@ export default async function GamePage({ params }: { params: any }) {
             <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-row not-md:flex-col gap-5">
                 <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
                 <div className="flex flex-col gap-2">
-                    
+
                     <p className="text-2xl">{game.name}</p>
                     <div className="flex flex-col">
                         <details className="flex flex-col gap-1">
@@ -267,7 +270,11 @@ export default async function GamePage({ params }: { params: any }) {
                         }
                     </div>
                 </div>
+
             </div>
+            {gameMarkdown ? <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-col not-md:flex-col gap-5" dangerouslySetInnerHTML={{ __html: gameMarkdown.html as string }}>
+            
+            </div> : undefined}
             <p className="text-5xl">More Like This:</p>
             <div className="grid grid-cols-6 gap-5 not-md:grid-cols-2">
                 {
