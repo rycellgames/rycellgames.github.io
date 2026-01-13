@@ -82,14 +82,6 @@ export default function Header() { // really just a sidebar
                         </Link>
                     </li>
                     <li>
-                        <Link href="/articles" className="flex items-center gap-3 py-2 px-2 rounded hover:bg-main-600 transition-colors">
-                            <span className="material-icons text-white">
-                                <BookIcon />
-                            </span>
-                            <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Articles</span>
-                        </Link>
-                    </li>
-                    <li>
                         <Link href="/contact" className="flex items-center gap-3 py-2 px-2 rounded hover:bg-main-600 transition-colors">
                             <span className="material-icons text-white">
                                 <Mail />
