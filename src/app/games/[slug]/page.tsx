@@ -5,8 +5,8 @@ import GameFrame from "@/lib/games/frames/gameFrame";
 import { notFound } from "next/navigation";
 import { GridCard } from "@/lib/games/cards/gridCard";
 import { marked } from "marked";
-import { title } from "process";
 import { getMdByGameSlug } from "@/lib/games/logic/fetch";
+import { BannerAd } from "@/lib/components/advertisements";
 
 type game = {
     name: string;
@@ -234,6 +234,7 @@ export default async function GamePage({ params }: { params: any }) {
         <div className="p-5 flex flex-col gap-5">
             <title>{`${game.name} | Rycell Games`}</title>
             <GameFrame game={game} />
+            <BannerAd />
             <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-row not-md:flex-col gap-5">
                 <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
                 <div className="flex flex-col gap-2">
