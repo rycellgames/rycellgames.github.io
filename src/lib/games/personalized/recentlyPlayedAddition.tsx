@@ -1,18 +1,31 @@
 "use client"
 
-type gameList = {
-    name: string,
-    slug: string
-}[]
+import { useEffect } from "react";
 
-export default function AddRecentlyPlayed({name, slug}: {name: string, slug: string}) {
-        const recentlyPlayedGamesStore = localStorage.getItem("recentlyPlayedGames")
-        const recentlyPlayedGames: gameList | null = recentlyPlayedGamesStore
-        ? (JSON.parse(recentlyPlayedGamesStore) as gameList)
-        : [];
-    
-        const newEntry = { name, slug };
-        const updated = [newEntry, ...recentlyPlayedGames.filter(g => g.slug !== slug)];
-        localStorage.setItem("recentlyPlayedGames", JSON.stringify(updated));
-        return <div></div>
+type Game = {
+    name: string;
+    slug: string;
+};
+
+type gameList = Game[];
+
+export default function AddRecentlyPlayed({ name, slug }: { name: string; slug: string }) {
+    useEffect(() => {
+        if (typeof window === "undefined" || typeof window.localStorage === "undefined") return;
+
+        try {
+            const recentlyPlayedGamesStore = window.localStorage.getItem("recentlyPlayedGames");
+            const recentlyPlayedGames: gameList = recentlyPlayedGamesStore
+                ? (JSON.parse(recentlyPlayedGamesStore) as gameList)
+                : [];
+
+            const newEntry: Game = { name, slug };
+            const updated = [newEntry, ...recentlyPlayedGames.filter(g => g.slug !== slug)];
+            window.localStorage.setItem("recentlyPlayedGames", JSON.stringify(updated));
+        } catch {
+            // ignore storage/parse errors
+        }
+    }, [name, slug]);
+
+    return <div></div>;
 }
