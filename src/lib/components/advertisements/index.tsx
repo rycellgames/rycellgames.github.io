@@ -1,3 +1,5 @@
+"use client";
+
 export function BannerAd() {
     return (
         <div className="bg-main-700 w-full min-h-10 rounded-lg p-5 max-w-[1000px]">

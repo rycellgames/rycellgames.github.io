@@ -7,6 +7,8 @@ import { GridCard } from "@/lib/games/cards/gridCard";
 import { marked } from "marked";
 import { getMdByGameSlug } from "@/lib/games/logic/fetch";
 import { BannerAd } from "@/lib/components/advertisements";
+import addRecentlyPlayed from "@/lib/games/personalized/recentlyPlayedAddition";
+import AddRecentlyPlayed from "@/lib/games/personalized/recentlyPlayedAddition";
 
 type game = {
     name: string;
@@ -194,6 +196,7 @@ export default async function GamePage({ params }: { params: any }) {
 
         return (
             <div className="p-5 flex flex-col gap-5">
+
                 <h1 className="text-4xl mb-5 capitalize">{slug} Games</h1>
                 {(() => {
                     const featured = games.slice(0, 4);
@@ -232,8 +235,10 @@ export default async function GamePage({ params }: { params: any }) {
 
     return (
         <div className="p-5 flex flex-col gap-5">
+            <AddRecentlyPlayed name={game.name} slug={ slug } />
             <title>{`${game.name} | Rycell Games`}</title>
             <GameFrame game={game} />
+            
             <BannerAd />
             <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-row not-md:flex-col gap-5">
                 <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
