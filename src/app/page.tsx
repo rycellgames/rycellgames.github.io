@@ -144,7 +144,6 @@ export default function Home() {
         <a href="https://rycellgames.github.io/games/boxingrandom/">Boxing Random</a>
         <a href="https://rycellgames.github.io/games/worldshardestgame/">The Worlds Hardest Game</a>
         <p>And that’s a small part of our collection of games!</p>
-        <img className="w-5 aspect-square transition-all hover:w-30" src={"/static/images/memes/khaby-lame.gif"} alt="khaby lamer mechanism"></img>
       </div>
     </div>
   );
