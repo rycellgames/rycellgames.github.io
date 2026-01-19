@@ -1,23 +1,30 @@
-"use client";
+'use client'
+import { use, useEffect } from "react"
 
-export function BannerAd() {
+type props = {className?: string}
+
+const BannerAd = ({className=""}: props) => {
+
+    if (typeof window == undefined) return;
+
+    useEffect(() => {
+        try {
+            ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+        } catch (err) {
+            console.error(err)
+        }
+    }, [])
+
     return (
-        <div className="bg-main-700 w-full min-h-10 rounded-lg p-5 max-w-[1000px]">
-            <p>Advertisement</p>
-            <div className="flex flex-col items-center justify-center">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9758035810696915"
-                crossOrigin="anonymous"></script>
-            
+        <div className={"bg-zinc-900 w-full h-10 rounded-lg flex flex-col items-center justify-center " + className}>
             <ins className="adsbygoogle"
-                style={{display: "block", height: "100%", width: "100%"}}
+                style={{ display: 'block', height: '100%', width: '100%' }}
                 data-ad-client="ca-pub-9758035810696915"
-                data-ad-slot="5423220557"
+                data-ad-slot="3103664696"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-        </script>
-        </div>    
         </div>
     )
 }
+
+export { BannerAd }
