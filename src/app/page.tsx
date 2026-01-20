@@ -2,6 +2,7 @@ import { getGamesList } from "@/lib/games/logic/list";
 import { GridCard, LargeCard } from "@/lib/games/cards/gridCard";
 import popular from "./popular";
 import PlayAgainRow from "@/lib/games/personalized/playAgain";
+import { SplitBannerAds } from "@/lib/components/advertisements";
 
 const gamesList = getGamesList()
 
@@ -61,6 +62,7 @@ export default function Home() {
             })
           }
         </div>
+        <SplitBannerAds />
         <PlayAgainRow />
         <h1 className="text-5xl">Popular</h1>
         <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
