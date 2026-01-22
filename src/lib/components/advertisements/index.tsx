@@ -3,43 +3,58 @@ import { useEffect } from "react"
 
 type props = { className?: string }
 
-const BannerAd = ({ className = "" }: props) => {
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
-    if (typeof window === 'undefined') return null;
+const BannerAd = ({ className = "" }) => {
+    const pathname = usePathname();
+    const [adKey, setAdKey] = useState(0);
+
+    useEffect(() => {
+        setAdKey(k => k + 1);
+    }, [pathname]);
 
     useEffect(() => {
         try {
-            const ads = document.querySelectorAll('.adsbygoogle');
-            ads.forEach(() => {
-                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-            });
-        } catch (err) {
-            console.error(err)
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+            console.error(e);
         }
-    }, [])
+    }, [adKey]);
 
     return (
-        <div className={"bg-zinc-900 w-full h-10 rounded-lg flex flex-col items-center justify-center " + className}>
-            <ins className="adsbygoogle"
-                style={{ display: 'block', height: '100%', width: '100%' }}
+        <div className={"bg-zinc-900 w-full h-10 rounded-lg " + className}>
+            <ins
+                key={adKey}
+                className="adsbygoogle"
+                style={{ display: "block", width: "100%", height: "100%" }}
                 data-ad-client="ca-pub-9758035810696915"
                 data-ad-slot="3103664696"
                 data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
+                data-full-width-responsive="true"
+            />
         </div>
-    )
-}
+    );
+};
+
 
 const SplitBannerAds = ({ className = "" }: props) => {
     // two advertisements split on the front screen
     if (typeof window === 'undefined') return null;
 
+    const pathname = usePathname();
+    const [adKey, setAdKey] = useState(0);
+    const [adKey2, setAdKey2] = useState(1)
+
+    useEffect(() => {
+        setAdKey(k => k + 1);
+        setAdKey2(adKey2 => adKey2 + 1)
+    }, [pathname]);
+
+
     useEffect(() => {
         try {
-            const ads = document.querySelectorAll('.adsbygoogle');
-            ads.forEach(() => {
-                ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-            });
+            ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
         } catch (err) {
             console.error(err)
         }
