@@ -250,7 +250,7 @@ export default async function GamePage({ params }: { params: any }) {
                     <SkyscraperAd className="not-md:hidden" adSlot="7980731949"/>
                 </div>
             </div> {/* bottom tag */}
-
+ 
             <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex w-full flex-row not-md:flex-col gap-5">
                 <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
                 <div className="flex flex-col gap-2">
