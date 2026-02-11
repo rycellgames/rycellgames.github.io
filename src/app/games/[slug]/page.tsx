@@ -237,7 +237,7 @@ export default async function GamePage({ params }: { params: any }) {
         <div className="px-5 flex flex-col gap-5 items-center">
             <AddRecentlyPlayed name={game.name} slug={slug} />
             <title>{`${game.name} | Rycell Games`}</title>
-
+ 
             <div className="w-full flex flex-row gap-5 justify-betweem not-md:justify-center">
                 <div className="w-2/10 not-md:hidden h-full">
                     <SkyscraperAd className="not-md:hidden" />
