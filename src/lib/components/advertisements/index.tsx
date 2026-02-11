@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react"
 
-type props = { className?: string }
+type props = { className?: string, adSlot?: string }
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -36,7 +36,36 @@ const BannerAd = ({ className = "" }) => {
         </div>
     );
 };
+const SkyscraperAd = ({ className = "", adSlot = "4567256653" }: props) => {
+    const pathname = usePathname();
+    const [adKey, setAdKey] = useState(0);
 
+    useEffect(() => {
+        setAdKey(k => k + 1);
+    }, [pathname]);
+
+    useEffect(() => {
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+            console.error(e);
+        }
+    }, [adKey]);
+
+    return (
+        <div className={"bg-zinc-900 w-full h-screen rounded-lg " + className}>
+            <ins
+                key={adKey}
+                className="adsbygoogle"
+                style={{ display: "block", width: "100%", height: "100%" }}
+                data-ad-client="ca-pub-9758035810696915"
+                data-ad-slot={adSlot}
+                data-ad-format="auto"
+                data-full-width-responsive="false"
+            />
+        </div>
+    );
+};
 
 const SplitBannerAds = ({ className = "" }: props) => {
     // two advertisements split on the front screen
@@ -78,4 +107,4 @@ const SplitBannerAds = ({ className = "" }: props) => {
     )
 }
 
-export { BannerAd, SplitBannerAds }
+export { BannerAd, SplitBannerAds, SkyscraperAd }
