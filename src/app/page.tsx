@@ -3,6 +3,7 @@ import { GridCard, LargeCard } from "@/lib/games/cards/gridCard";
 import popular from "./popular";
 import PlayAgainRow from "@/lib/games/personalized/playAgain";
 import { SplitBannerAds } from "@/lib/components/advertisements";
+import taggedGames from "@/lib/games/taggedGames.json";
 
 const gamesList = getGamesList()
 
@@ -28,24 +29,16 @@ export default function Home() {
   const categoryMap: Record<string, Array<any>> = {};
   const specialTagsMap: Record<string, Array<any>> = {};
 
-  gamesList.forEach(game => {
-    if (!game.folder) return;
-    if (Array.isArray(game.exclusiveTags)) {
-      game.exclusiveTags.forEach((tag: string) => {
-        if (!specialTagsMap[tag]) specialTagsMap[tag] = []
-        specialTagsMap[tag].push(game)
-      })
-    }
-  }) // function to list all EXCLUSIVE tags (new, popular etc.)
 
-  gamesList.forEach(game => {
-    if (Array.isArray(game.categories)) {
-      game.categories.forEach((cat: string) => {
-        if (!categoryMap[cat]) categoryMap[cat] = [];
-        categoryMap[cat].push(game);
-      });
-    }
+Object.entries(taggedGames).forEach(([tag, gameIds]) => {
+  gameIds.forEach((id: string) => {
+    const game = gamesList.find(g => g.folder === id);
+    if (!game) return;
+
+    if (!specialTagsMap[tag]) specialTagsMap[tag] = [];
+    specialTagsMap[tag].push(game);
   });
+});
 
   return (
     <div className="w-full p-5">

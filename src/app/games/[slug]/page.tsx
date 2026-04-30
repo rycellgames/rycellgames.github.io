@@ -324,9 +324,13 @@ export default async function GamePage({ params }: { params: any }) {
                         </div>
 
                     </div>
-                    {gameMarkdown ? <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-col not-md:flex-col gap-5" dangerouslySetInnerHTML={{ __html: gameMarkdown.html as string }}>
+                    {gameMarkdown
+                        ?
+                        <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-col not-md:flex-col gap-5" dangerouslySetInnerHTML={{ __html: gameMarkdown.html as string }}>
 
-                    </div> : undefined}
+                        </div>
+                        : 
+                    <BannerAd />}
                 </div>
                 <div className="w-2/10 h-full not-md:hidden flex flex-col gap-5">
                     <SkyscraperAd className="not-md:hidden" adSlot="7980731949" />
