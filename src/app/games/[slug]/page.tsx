@@ -233,66 +233,116 @@ export default async function GamePage({ params }: { params: any }) {
     const game = await getGameData(slug);
     const gameMarkdown = getMdByGameSlug(slug);
 
+    // Get related games array once to avoid duplicates
+    const getRelatedGames = () => {
+        const gamesDir = path.join(process.cwd(), "public/raw/games");
+        const folders = fs.readdirSync(gamesDir).filter((folder) => {
+            const fullPath = path.join(gamesDir, folder);
+            return fs.statSync(fullPath).isDirectory();
+        });
+
+        const allGames = folders
+            .filter((folder) => folder !== game.id)
+            .map((folder) => {
+                const filePath = path.join(gamesDir, folder, "game.json");
+                const fileContents = fs.readFileSync(filePath, "utf-8");
+                return { id: folder, ...JSON.parse(fileContents) };
+            });
+
+        const currentTags = Array.isArray(game.categories)
+            ? game.categories.map((tag: string) => tag.trim().toLowerCase())
+            : game.categories.split(',').map((tag: string) => tag.trim().toLowerCase());
+
+        const relatedGames = allGames.filter((other) => {
+            const otherTags = Array.isArray(other.categories)
+                ? other.categories.map((tag: string) => tag.trim().toLowerCase())
+                : other.categories.split(',').map((tag: string) => tag.trim().toLowerCase());
+            return otherTags.some((tag: string) => currentTags.includes(tag));
+        }).slice(0, 12);
+
+        return relatedGames;
+    };
+
+    const relatedGamesArray = getRelatedGames();
+
     return (
         <div className="px-5 flex flex-col gap-5 items-center">
             <AddRecentlyPlayed name={game.name} slug={slug} />
             <title>{`${game.name} | Rycell Games`}</title>
- 
+
             <div className="w-full flex flex-row gap-5 justify-betweem not-md:justify-center">
-                <div className="w-2/10 not-md:hidden h-full">
+                <div className="w-2/10 not-md:hidden h-full flex flex-col gap-5">
                     <SkyscraperAd className="not-md:hidden" />
+                    <div className=" grid grid-cols-2 gap-3">
+                        {
+                            (() => {
+                                const leftSideGames = relatedGamesArray.splice(0, 6);
+                                return leftSideGames.map((relatedGame) => (
+                                    <GridCard key={relatedGame.id} name={relatedGame.name} id={relatedGame.id} />
+                                ));
+                            })()
+                        }
+                    </div>
                 </div>
                 <div className="w-6/10 not-md:w-full flex flex-col gap-5">
                     <GameFrame game={game} />
+                    <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex w-full flex-row not-md:flex-col gap-5">
+                        <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
+                        <div className="flex flex-col gap-2">
 
+                            <p className="text-2xl">{game.name}</p>
+                            <div className="flex flex-col">
+                                <details className="flex flex-col gap-1">
+                                    <summary>Tags</summary>
+                                    <div className="flex flex-col">
+                                        {game.categories.map((tag: string) => {
+                                            return <a href={`/games/${tag}`} key={tag}>{tag.trim().charAt(0).toUpperCase() + tag.trim().slice(1)}</a>
+                                        })}
+                                    </div>
+                                </details>
+                                <details className="flex flex-col gap-1">
+                                    <summary>Description</summary>
+                                    <p>{game.description}</p>
+                                </details>
+                            </div>
+                            <div className="flex flex-row gap-5 mt-2">
+                                {
+                                    (() => {
+                                        if (game.exclusiveTags?.includes('new')) {
+                                            return <p className="bg-blue-600 px-1 rounded-sm">New</p>
+                                        }
+                                    })()
+                                }
+                                {
+                                    (() => {
+                                        if (game.exclusiveTags?.includes('popular')) {
+                                            return <p className="bg-amber-600 px-1 rounded-sm">Popular</p>
+                                        }
+                                    })()
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                    {gameMarkdown ? <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-col not-md:flex-col gap-5" dangerouslySetInnerHTML={{ __html: gameMarkdown.html as string }}>
+
+                    </div> : undefined}
                 </div>
-                <div className="w-2/10 h-full not-md:hidden">
-                    <SkyscraperAd className="not-md:hidden" adSlot="7980731949"/>
+                <div className="w-2/10 h-full not-md:hidden flex flex-col gap-5">
+                    <SkyscraperAd className="not-md:hidden" adSlot="7980731949" />
+                    <div className="grid grid-cols-2 gap-3">
+                        {
+                            relatedGamesArray.map((relatedGame) => (
+                                <GridCard key={relatedGame.id} name={relatedGame.name} id={relatedGame.id} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div> {/* bottom tag */}
- 
-            <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex w-full flex-row not-md:flex-col gap-5">
-                <img src={`/static/images/games/${game.id}.webp`} alt={game.name} className="max-w-50 rounded-2xl aspect-square object-cover not-md:max-w-full not-md:w-full"></img>
-                <div className="flex flex-col gap-2">
 
-                    <p className="text-2xl">{game.name}</p>
-                    <div className="flex flex-col">
-                        <details className="flex flex-col gap-1">
-                            <summary>Tags</summary>
-                            <div className="flex flex-col">
-                                {game.categories.map((tag: string) => {
-                                    return <a href={`/games/${tag}`} key={tag}>{tag.trim().charAt(0).toUpperCase() + tag.trim().slice(1)}</a>
-                                })}
-                            </div>
-                        </details>
-                        <details className="flex flex-col gap-1">
-                            <summary>Description</summary>
-                            <p>{game.description}</p>
-                        </details>
-                    </div>
-                    <div className="flex flex-row gap-5 mt-2">
-                        {
-                            (() => {
-                                if (game.exclusiveTags?.includes('new')) {
-                                    return <p className="bg-blue-600 px-1 rounded-sm">New</p>
-                                }
-                            })()
-                        }
-                        {
-                            (() => {
-                                if (game.exclusiveTags?.includes('popular')) {
-                                    return <p className="bg-amber-600 px-1 rounded-sm">Popular</p>
-                                }
-                            })()
-                        }
-                    </div>
-                </div>
 
-            </div>
-            {gameMarkdown ? <div className="bg-main-800 min-h-50 rounded-2xl p-5 flex flex-col not-md:flex-col gap-5" dangerouslySetInnerHTML={{ __html: gameMarkdown.html as string }}>
 
-            </div> : undefined}
-            <div className="grid grid-cols-7 gap-5 not-md:grid-cols-2">
+            <div className="grid grid-cols-9 gap-5 not-md:grid-cols-2">
                 {
                     (() => {
                         const gamesDir = path.join(process.cwd(), "public/raw/games");
