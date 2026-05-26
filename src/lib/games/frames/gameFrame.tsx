@@ -1,14 +1,9 @@
 'use client'
 import { useRef } from "react";
 import { Maximize } from "lucide-react";
+import { FavoriteStar } from "../personalized/buttons/favoriteStar";
+import { game } from "@/lib/global"
 
-type game = {
-    name: string,
-    categories: string[],
-    description: string,
-    id: string,
-    exclusiveTags?: string[];
-}
 type frameParams = {
     game: game
 }
@@ -16,21 +11,28 @@ type frameParams = {
 export default function GameFrame({ game }: frameParams) {
 
     const iframe = useRef<HTMLIFrameElement>(null);
-    
+
 
     return (
 
-            <div className="bg-main-800 rounded-2xl flex flex-col w-full  overflow-hidden">
-                <iframe src={`/raw/games/${game.id}/index.html`} className="w-full aspect-video" title={game.name} ref={iframe}></iframe>
-                <div className="grow p-5 flex flex-row justify-between">
-                    <h1 className="text-xl">{game.name ?? game.id}</h1>
+        <div className="bg-main-800 rounded-2xl flex flex-col w-full  overflow-hidden">
+            <iframe src={`/raw/games/${game.id}/index.html`} className="w-full aspect-video" title={game.name} ref={iframe}></iframe>
+            <div className="grow p-5 flex flex-row justify-between">
+                <h1 className="text-xl">{game.name ?? game.id}</h1>
+                <div className="flex flex-row gap-2 justify-between items-center">
                     <button title="Fullscreen" className="hover:bg-white/50 p-2 rounded-[50%] transition-all hover:cursor-pointer"
                         onClick={() => iframe.current?.requestFullscreen()}
                     >
+
                         <Maximize />
+
+
+
                     </button>
+                    <FavoriteStar game={game} />
                 </div>
             </div>
+        </div>
 
 
     );
