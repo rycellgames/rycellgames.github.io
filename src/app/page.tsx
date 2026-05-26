@@ -4,6 +4,8 @@ import popular from "./popular";
 import PlayAgainRow from "@/lib/games/personalized/playAgain";
 import { SplitBannerAds } from "@/lib/components/advertisements";
 import taggedGames from "@/lib/games/taggedGames.json";
+import { FavoriteStar } from "@/lib/games/personalized/buttons/favoriteStar";
+import FavoritedGamesRow from "@/lib/games/personalized/favorites";
 
 const gamesList = getGamesList()
 
@@ -57,6 +59,7 @@ Object.entries(taggedGames).forEach(([tag, gameIds]) => {
         </div>
         <SplitBannerAds />
         <PlayAgainRow />
+        <FavoritedGamesRow />
         <h1 className="text-5xl">Popular</h1>
         <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
           {
