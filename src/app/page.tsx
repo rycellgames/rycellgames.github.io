@@ -1,5 +1,5 @@
 import { getGamesList } from "@/lib/games/logic/list";
-import { GridCard, LargeCard } from "@/lib/games/cards/gridCard";
+import { GridCard} from "@/lib/games/cards/gridCard";
 import popular from "./popular";
 import PlayAgainRow from "@/lib/games/personalized/playAgain";
 import { SplitBannerAds } from "@/lib/components/advertisements";
@@ -53,7 +53,7 @@ Object.entries(taggedGames).forEach(([tag, gameIds]) => {
               if (!info.folder) return
               if (index > 3) return
               gamesDisplayed.push(info.folder)
-              return <LargeCard name={info.name} id={info.folder} key={info.folder} />
+              return <GridCard name={info.name} id={info.folder} key={info.folder} />
             })
           }
         </div>

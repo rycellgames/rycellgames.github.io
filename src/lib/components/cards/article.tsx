@@ -16,7 +16,7 @@ interface props {
 }
 
 export default {
-    largeCard: function ({ name, shortDescription, href, thumbnail, identifier }: props) {
+    GridCard: function ({ name, shortDescription, href, thumbnail, identifier }: props) {
         return (
             <a className="w-full min-h-full rounded-lg flex flex-col" key={identifier} href={href}>
                 <Image src={thumbnail} alt={name} className="w-full h-7/8 not-md:max-h-6/8 object-cover rounded-2xl" width={940} height={550} />
