@@ -5,7 +5,7 @@ import { Gamepad, InfoIcon, Mail, Search, Gamepad2, Puzzle, CarFront, BookIcon }
 
 export default function Header() { // really just a sidebar
     return (
-        <nav className='bg-main-700 h-[100vh] w-16 flex flex-col fixed px-2 mb-5 box-border'>
+        <nav className='bg-main-700 h-[100vh] w-16 flex flex-col fixed px-2 mb-5 box-border z-50'>
             <div className="group flex flex-col items-center h-full transition-all duration-300 w-16 hover:w-56 bg-main-700 overflow-hidden">
                 <Link href={"/"} className="mt-2 flex flex-col items-left w-full gap-3 px-2">
                     <Image
