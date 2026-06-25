@@ -3,5 +3,6 @@ export type game = {
     categories?: string[],
     description?: string,
     id: string,
-    exclusiveTags?: string[];
+    exclusiveTags?: string[],
+    sandboxFlags?: string[]
 }

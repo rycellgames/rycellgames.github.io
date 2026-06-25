@@ -12,11 +12,10 @@ export default function GameFrame({ game }: frameParams) {
 
     const iframe = useRef<HTMLIFrameElement>(null);
 
-
     return (
 
         <div className="bg-main-800 rounded-2xl flex flex-col w-full  overflow-hidden">
-            <iframe src={`/raw/games/${game.id}/index.html`} className="w-full aspect-video" title={game.name} ref={iframe}></iframe>
+            <iframe src={`/raw/games/${game.id}/index.html`} className="w-full aspect-video" title={game.name} ref={iframe} sandbox={game.sandboxFlags ? game.sandboxFlags.join(" ") : undefined}></iframe>
             <div className="grow p-5 flex flex-row justify-between">
                 <h1 className="text-xl">{game.name ?? game.id}</h1>
                 <div className="flex flex-row gap-2 justify-between items-center">

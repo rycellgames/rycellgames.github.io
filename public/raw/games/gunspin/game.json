@@ -1,0 +1,8 @@
+{
+  "categories": [
+    "infinite", "strategy", "fun"
+  ],
+  "name": "Gun Spin",
+  "description": "Gun spin is a game where you are a gun and you use your recoil to launch you across the map, the aim of the game is to get the furthest! Increase your score by practicing your strategy, upgrading your skills, and by getting new guns!",
+  "sandboxFlags": ["allow-scripts allow-same-origin"]
+}

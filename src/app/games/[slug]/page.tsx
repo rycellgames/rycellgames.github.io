@@ -384,3 +384,5 @@ export default async function GamePage({ params }: { params: any }) {
         </div>
     );
 }
+
+export {getGameData}
