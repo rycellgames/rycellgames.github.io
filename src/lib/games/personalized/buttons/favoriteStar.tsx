@@ -3,6 +3,7 @@ import { Star } from "lucide-react";
 import { DynamicIcon } from "lucide-react/dynamic"
 import { useState, useEffect } from "react";
 import { game } from "@/lib/global"
+import { favorited_game_event } from "@/lib/analytics/gtag";
 
 type params = {
     game: game
@@ -30,6 +31,7 @@ export function FavoriteStar({ game }: params) {
             onClick={
                 () => {
                     const newFavorited = !favorited;
+                    if (newFavorited) favorited_game_event({ game: game });
                     setFavorited(newFavorited)
                     favoriteGame(game, newFavorited)
                 }}
