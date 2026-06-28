@@ -7,6 +7,9 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const BannerAd = ({ className = "" }) => {
+    if (typeof window === 'undefined') return null;
+    if (!(window as any).adsbygoogle) return null;
+
     const pathname = usePathname();
     const [adKey, setAdKey] = useState(0);
 
@@ -16,7 +19,7 @@ const BannerAd = ({ className = "" }) => {
 
     useEffect(() => {
         try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
         } catch (e) {
             console.error(e);
         }
@@ -37,6 +40,9 @@ const BannerAd = ({ className = "" }) => {
     );
 };
 const SkyscraperAd = ({ className = "", adSlot = "4567256653" }: props) => {
+    if (typeof window === 'undefined') return null;
+    if (!(window as any).adsbygoogle) return null;
+
     const pathname = usePathname();
     const [adKey, setAdKey] = useState(0);
 
@@ -46,7 +52,7 @@ const SkyscraperAd = ({ className = "", adSlot = "4567256653" }: props) => {
 
     useEffect(() => {
         try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
         } catch (e) {
             console.error(e);
         }

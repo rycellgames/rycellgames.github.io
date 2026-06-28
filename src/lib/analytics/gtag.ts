@@ -1,3 +1,4 @@
+'use client'
 import { game } from "../global"
 
 type favorited_game_type = {
@@ -5,8 +6,10 @@ type favorited_game_type = {
 }
 
 export const favorited_game_event = (params: favorited_game_type) => {
+    if (typeof window === 'undefined') return null;
+    if (!(window as any).gtag) return null;
     try {
-        (window as any).gtag("event", "favorited_game", {params})
+        (window as any).gtag("event", "favorited_game", { params })
         return
     } catch (err) {
         console.error(err)
