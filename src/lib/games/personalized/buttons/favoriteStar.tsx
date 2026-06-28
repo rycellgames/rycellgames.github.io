@@ -1,42 +1,38 @@
 "use client";
-import { Star } from "lucide-react";
-import { DynamicIcon } from "lucide-react/dynamic"
-import { useState, useEffect } from "react";
-import { game } from "@/lib/global"
+import { DynamicIcon } from "lucide-react/dynamic";
+import { useEffect, useState } from "react";
+import { game } from "@/lib/global";
 import { favorited_game_event } from "@/lib/analytics/gtag";
 
 type params = {
-    game: game
-}
+    game: game;
+};
 
 type gameList = game[];
 
 export function FavoriteStar({ game }: params) {
-
-    if (typeof window === "undefined" || typeof window.localStorage === "undefined") return null;
-    const [favorited, setFavorited] = useState<boolean>(false)
+    const [favorited, setFavorited] = useState<boolean>(false);
 
     useEffect(() => {
-        if (isFavorited(game)) {
-            setFavorited(true)
-            console.log("We have now set game favorited to true.")
-      }
+        if (typeof window === "undefined" || typeof window.localStorage === "undefined") return;
+        setFavorited(isFavorited(game));
     }, [game.name]);
+
+    if (typeof window === "undefined" || typeof window.localStorage === "undefined") return null;
 
     return (
         <DynamicIcon
             name="bookmark"
             fill={favorited ? "white" : "transparent"}
             color="white"
-            onClick={
-                () => {
-                    const newFavorited = !favorited;
-                    if (newFavorited) favorited_game_event({ game: game });
-                    setFavorited(newFavorited)
-                    favoriteGame(game, newFavorited)
-                }}
+            onClick={() => {
+                const newFavorited = !favorited;
+                if (newFavorited) favorited_game_event({ game: game });
+                setFavorited(newFavorited);
+                favoriteGame(game, newFavorited);
+            }}
         />
-    )
+    );
 }
 
 function fetchFavoritedGames() {
@@ -44,38 +40,25 @@ function fetchFavoritedGames() {
     const favGames: gameList = favGamesStore
         ? (JSON.parse(favGamesStore) as gameList)
         : [];
-    return favGames
+
+    return favGames;
 }
 
-function isFavorited(Game: game, setFavorited?: (value: boolean) => void ) {
-
-    const favGames = fetchFavoritedGames()
-    // follow similar logic to the recently played
-    const gameFavorited = favGames.find(favGame => favGame.name === Game.name);
-    if (gameFavorited && setFavorited) {
-        setFavorited(true);
-    } else if (!gameFavorited && setFavorited) {
-        setFavorited(false);
-    }
-    return gameFavorited ?? false
+function isFavorited(Game: game) {
+    const favGames = fetchFavoritedGames();
+    return favGames.some((favGame) => favGame.name === Game.name);
 }
 
 function favoriteGame(Game: game, favorited: boolean) {
-
     let favGames = fetchFavoritedGames();
     const gameInFavorites = isFavorited(Game);
-  
-    console.log("In fav game func, fav is " + favorited);
 
     if (!gameInFavorites && favorited) {
-        // Add to favorites
         favGames.push(Game);
     } else if (gameInFavorites && !favorited) {
-        // Remove from favorites
-        favGames = favGames.filter(favGame => favGame.name !== Game.name);
+        favGames = favGames.filter((favGame) => favGame.name !== Game.name);
     }
 
-    // Save back to localStorage
     window.localStorage.setItem("favoriteGames", JSON.stringify(favGames));
-
+    window.dispatchEvent(new Event("favoritesChanged"));
 }

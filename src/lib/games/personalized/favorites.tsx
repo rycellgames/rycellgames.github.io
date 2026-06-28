@@ -1,36 +1,49 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FavoriteCard, GridCard } from "../cards/gridCard";
+import { GridCard } from "../cards/gridCard";
 import { game } from "@/lib/global";
 
-type gameList = game[]
+type gameList = game[];
 
 export default function FavoritedGamesRow() {
-
     const [favoritedGames, setFavoritedGames] = useState<gameList | null>(null);
 
-    useEffect(() => {
+    const loadFavoritedGames = () => {
         if (typeof window === "undefined") return;
-        const favoriteGamesStore = localStorage.getItem("favoriteGames")
+
+        const favoriteGamesStore = localStorage.getItem("favoriteGames");
         const parsed: gameList | null = favoriteGamesStore
             ? (JSON.parse(favoriteGamesStore) as gameList)
             : null;
+
         setFavoritedGames(parsed);
+    };
+
+    useEffect(() => {
+        loadFavoritedGames();
+
+        const handleFavoritesChanged = () => {
+            loadFavoritedGames();
+        };
+
+        window.addEventListener("favoritesChanged", handleFavoritesChanged);
+        window.addEventListener("storage", handleFavoritesChanged);
+
+        return () => {
+            window.removeEventListener("favoritesChanged", handleFavoritesChanged);
+            window.removeEventListener("storage", handleFavoritesChanged);
+        };
     }, []);
 
-    return (
-        favoritedGames ? <div>
+    return favoritedGames && favoritedGames.length > 0 ? (
+        <div>
             <h1>Favorites</h1>
             <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
-                {
-                    favoritedGames.map((val, index) => {
-                        return <FavoriteCard game={val} />
-                    })
-                }
+                {favoritedGames.map((val) => (
+                    <GridCard key={val.id ?? val.name} name={val.name} id={val.id} />
+                ))}
             </div>
-        </div> : null
-    )
-
-    // return {    <div className="grid grid-cols-4 not-md:grid-cols-1 gap-5 overflow-hidden not-md:grid-rows-1"></div>}
+        </div>
+    ) : null;
 }
