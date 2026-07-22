@@ -10,7 +10,7 @@ export const favorited_game_event = (params: favorited_game_type) => {
     
     if (!(window as any).gtag) { console.log("no gtag");  return null; }
     try {
-        (window as any).gtag("event", "favorited_game", { params })
+        (window as any).gtag("event", "favorited_game", { ...params })
         return
     } catch (err) {
         console.error(err)
