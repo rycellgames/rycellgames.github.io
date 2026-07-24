@@ -1,14 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { game, gameInFolder } from '@/lib/global';
 
 const gamesDir = path.join(process.cwd(), 'public/raw/games');
 
-type gameData = {
-    name: string;
-    description: string;
-    categories: string;
-    exclusiveTags: string[]
-}
+type gameData = gameInFolder
 
 export function getGamesList() {
     const folders = fs.readdirSync(gamesDir, { withFileTypes: true })
@@ -18,16 +14,16 @@ export function getGamesList() {
     const games = folders.map(folder => {
         const jsonPath = path.join(gamesDir, folder, 'game.json');
         if (fs.existsSync(jsonPath)) {
-            const data : gameData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+            const data: gameData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
 
-            return { folder, ...data };
+            return { folder, id: folder, ...data };
         }
         return {
             name: undefined,
             description: undefined,
             categories: undefined,
             exclusiveTags: undefined,
-            folder: undefined
+            folder: undefined,
         };
     }).filter(Boolean);
 

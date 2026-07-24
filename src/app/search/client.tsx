@@ -3,17 +3,11 @@
 import { GridCard } from "@/lib/games/cards/gridCard";
 import { SearchIcon } from "lucide-react";
 import { useState } from "react";
+import {game} from "@/lib/global";
 
-type gameData = {
-  name?: string;
-  description?: string;
-  categories?: string;
-  exclusiveTags?: string[];
-  folder?: string;
-}
 
 type functionData = {
-  games: gameData[]
+  games: game[];
 }
 
 export default function SearchClient({ games }: functionData) {

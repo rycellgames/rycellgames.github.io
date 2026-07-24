@@ -23,3 +23,7 @@ export function getMdByGameSlug(slug: string) {
     return { frontmatter: data, html: htmlContent };
 
 }
+
+export function fetchGamesList() {
+    
+}

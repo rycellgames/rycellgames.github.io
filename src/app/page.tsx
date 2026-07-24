@@ -6,6 +6,7 @@ import { SplitBannerAds } from "@/lib/components/advertisements";
 import taggedGames from "@/lib/games/taggedGames.json";
 import { FavoriteStar } from "@/lib/games/personalized/buttons/favoriteStar";
 import FavoritedGamesRow from "@/lib/games/personalized/favorites";
+import { BasedOnWhatYouPlay } from "@/lib/games/personalized/basedOnHistory";
 
 const gamesList = getGamesList()
 
@@ -60,6 +61,7 @@ Object.entries(taggedGames).forEach(([tag, gameIds]) => {
         <SplitBannerAds />
         <PlayAgainRow />
         <FavoritedGamesRow />
+        <BasedOnWhatYouPlay games={gamesList} />
         <h1 className="text-5xl">Popular</h1>
         <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
           {
@@ -93,7 +95,7 @@ Object.entries(taggedGames).forEach(([tag, gameIds]) => {
           })
         }
 
-
+        
 
         {/* seperate category sections */}
         <div className="flex flex-col gap-8">
