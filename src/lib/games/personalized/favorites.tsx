@@ -41,7 +41,7 @@ export default function FavoritedGamesRow() {
             <h1>Favorites</h1>
             <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
                 {favoritedGames.map((val) => (
-                    <GridCard key={val.id ?? val.name} name={val.name} id={val.id} />
+                    <GridCard key={val.id ?? val.name} name={val.name || ""} id={val.id || ""} />
                 ))}
             </div>
         </div>
