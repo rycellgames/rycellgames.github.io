@@ -1,0 +1,10 @@
+{
+  "id": "fnaf3",
+  "name": "FNAF 3",
+  "description": "Investigate a spooky attraction while Springtrap stalks you through failing systems.",
+  "categories": [
+    "fnaf",
+    "horror"
+  ],
+  "specialCategories": null
+}

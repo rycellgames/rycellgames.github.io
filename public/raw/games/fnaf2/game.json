@@ -1,0 +1,10 @@
+{
+  "id": "fnaf2",
+  "name": "FNAF 2",
+  "description": "Face smarter animatronics, no doors, and escalating dread in a new pizzeria.",
+  "categories": [
+    "fnaf",
+    "horror"
+  ],
+  "specialCategories": null
+}

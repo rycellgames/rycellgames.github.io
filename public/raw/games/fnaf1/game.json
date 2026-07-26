@@ -1,0 +1,10 @@
+{
+  "id": "fnaf1",
+  "name": "FNAF",
+  "description": "Survive five nights against haunted animatronics in a tense security office.",
+  "categories": [
+    "fnaf",
+    "horror"
+  ],
+  "specialCategories": null
+}

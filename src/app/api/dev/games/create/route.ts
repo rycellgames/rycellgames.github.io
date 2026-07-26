@@ -46,6 +46,24 @@ async function findIndexHtml(baseDir: string): Promise<boolean> {
   return false;
 }
 
+async function updateTaggedGames(taggedGamesPath: string, id: string, specialCategories: string[]) {
+  const promotedTags = specialCategories.filter((tag) => ['new', 'popular'].includes(tag.toLowerCase()));
+  if (promotedTags.length === 0) return;
+
+  const taggedGames = await fs.promises.readFile(taggedGamesPath, 'utf8').then((content) => JSON.parse(content) as Record<string, string[]>).catch(() => ({} as Record<string, string[]>));
+
+  for (const tag of promotedTags) {
+    const normalizedTag = tag.toLowerCase();
+    const existing = taggedGames[normalizedTag] ?? [];
+    if (!existing.includes(id)) {
+      existing.unshift(id);
+    }
+    taggedGames[normalizedTag] = existing;
+  }
+
+  await fs.promises.writeFile(taggedGamesPath, JSON.stringify(taggedGames, null, 2), 'utf8');
+}
+
 export async function POST(req: Request) {
   if (process.env.NODE_ENV !== 'development') {
     return new Response('Not found', { status: 404 });
@@ -58,6 +76,7 @@ export async function POST(req: Request) {
     const idRaw = (formData.get('id') as string) || '';
     const shortDescription = (formData.get('shortDescription') as string) || '';
     const categoriesRaw = (formData.get('categories') as string) || '';
+    const specialCategoriesRaw = (formData.get('specialCategories') as string) || null;
 
     if (!name || !idRaw || !shortDescription || !categoriesRaw) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
@@ -103,16 +122,24 @@ export async function POST(req: Request) {
 
     // write image as {id}.webp
     const imageBuffer = Buffer.from(await (imageFile as File).arrayBuffer());
-    const imagePath = path.join(targetDir, `${id}.webp`);
+    const imagePath = path.join(imageDir, `${id}.webp`);
     await fs.promises.writeFile(imagePath, imageBuffer);
 
     const categories = categoriesRaw.split(',').map((s: string) => s.trim()).filter(Boolean);
+    const parsedSpecialCategories = specialCategoriesRaw
+      ? specialCategoriesRaw.split(',').map((s: string) => s.trim()).filter(Boolean)
+      : [];
+    const specialCategories = parsedSpecialCategories.filter((tag) => !['new', 'popular'].includes(tag.toLowerCase()));
     const gameJson = {
       id,
       name,
       description: shortDescription,
       categories,
+      specialCategories: specialCategories.length ? specialCategories : null
     } as const;
+
+    const taggedGamesPath = path.join(process.cwd(), 'src', 'lib', 'games', 'taggedGames.json');
+    await updateTaggedGames(taggedGamesPath, id, parsedSpecialCategories);
 
     await fs.promises.writeFile(path.join(targetDir, 'game.json'), JSON.stringify(gameJson, null, 2), 'utf8');
 

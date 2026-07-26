@@ -1,7 +1,6 @@
-import '@/app/globals.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Gamepad, InfoIcon, Mail, Search, Gamepad2, Puzzle, CarFront, BookIcon } from 'lucide-react'
+import { Gamepad, InfoIcon, Mail, Search, Gamepad2, Puzzle, CarFront, BookIcon, Code } from 'lucide-react'
 
 export default function Header() { // really just a sidebar
     return (
@@ -89,6 +88,23 @@ export default function Header() { // really just a sidebar
                             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Contact</span>
                         </Link>
                     </li>
+                    {
+                        process.env.NODE_ENV == 'development' ?
+                            <>
+                                <li>
+                                    <span className="text-white opacity-0 w-full px-2 py-2 text-left group-hover:opacity-100 text-lg transition-opacity duration-300">
+                                        Development
+                                    </span>
+                                </li>
+                                <Link href="/dev" className="flex items-center gap-3 py-2 px-2 rounded hover:bg-main-600 transition-colors">
+                                    <span className="material-icons text-white">
+                                        <Code />
+                                    </span>
+                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Panel</span>
+                                </Link>
+                            </>
+                            : null
+                    }
                 </ul>
             </div>
         </nav>
