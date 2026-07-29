@@ -24,11 +24,17 @@ export default function PlayAgainRow() {
     return (
         recentlyPlayedGames ? <div>
             <h1>Keep Playing</h1>
-            <div className="grid grid-cols-6 not-md:grid-cols-2 gap-5 grow max-h-full">
+            <div className="flex flex-row overflow-auto gap-5 grow max-h-full relative utility-scrollbar-none">
                 {
                     recentlyPlayedGames.map((val, index) => {
-                        return <GridCard key={val.slug ?? index} name={val.name} id={val.slug} />
+                        return <GridCard key={val.slug ?? index} className="h-63 w-63" name={val.name} id={val.slug} />
                     })
+                }
+                {
+                    recentlyPlayedGames.length > 5 ? <div className="absolute flex right-0 h-full w-30 z-21">
+                        <div className="grow h-full bg-gradient-to-r from-transparent to-main-900"></div>
+                        <div className="w-1/4 h-full bg-main-900"></div>
+                    </div> : null
                 }
             </div>
         </div> : null
