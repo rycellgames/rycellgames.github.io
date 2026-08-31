@@ -1,0 +1,14 @@
+{
+  "id": "jelly-escape",
+  "name": "Jelly Escape",
+  "description": "Escape from traps, jump over fire, and avoid other jellies to reach the exit at each level in Jelly Escape. Cover the world in jelly.",
+  "categories": [
+    "jelly",
+    "endless",
+    "runner",
+    "adventure",
+    "puzzle"
+  ],
+  "specialCategories": null,
+  "sandboxFlags": ["allow-scripts allow-same-origin"]
+}
