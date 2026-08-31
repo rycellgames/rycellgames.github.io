@@ -22,6 +22,18 @@ h6 {
   font-weight: revert;
 }
 
+.utility-scrollbar-none {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+  }
+}
+
 @theme inline {
   --color-main-50: var(--color-gray-50);
   --color-main-100: var(--color-gray-100);
@@ -34,10 +46,16 @@ h6 {
   --color-main-800: rgb(32, 32, 32);
   --color-main-900: rgb(14, 14, 14);
   --color-main-950: #070707;
+
+
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Outfit', sans-serif;
+}
+
+html * {
+  scroll-behavior: smooth;
 }

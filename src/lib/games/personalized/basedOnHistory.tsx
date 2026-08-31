@@ -24,13 +24,10 @@ export function BasedOnWhatYouPlay({ games }: Props) {
 
         (async () => {
             try {
-                console.log("   Getting recently played games");
                 const recentlyPlayed = await Promise.resolve(getRecentlyPlayed());
                 const allGames = games
 
                 if (!mounted) return;
-                console.log(recentlyPlayed);
-                console.log(allGames);
                 if (!recentlyPlayed || !allGames) {
                     setMatchingGames([]);
                     return;
@@ -39,7 +36,6 @@ export function BasedOnWhatYouPlay({ games }: Props) {
                 const matches: MatchedGame[] = [];
 
                 for (const played of recentlyPlayed) {
-                    console.log(played);
                     if (matches.length === 6) break;
                     for (const comparedGame of allGames) {
                         if (matches.length === 6) break;
@@ -48,7 +44,6 @@ export function BasedOnWhatYouPlay({ games }: Props) {
                         const comparedCategories = comparedGame.categories ?? [];
                         for (const category of comparedCategories) {
                             if (played.categories?.includes(category)) {
-                                console.log("Found match: " + comparedGame.name);
                                 if (!matches.some(m => m.folder === comparedGame.folder)) {
                                     if (!matches.some(m => m.from === played.name)) {
                                     
@@ -70,7 +65,6 @@ export function BasedOnWhatYouPlay({ games }: Props) {
         return () => { mounted = false; };
     }, []);
 
-    console.log(matchingGames)
 
     if (matchingGames === null) return <h1>Loading...</h1>;
     if (matchingGames.length === 0) return null;
@@ -81,8 +75,6 @@ export function BasedOnWhatYouPlay({ games }: Props) {
         if (!game.name || !game.folder) continue;
         matchingGamesCards.push(<GridCard name={game.name} id={game.folder} key={game.folder} />);
     }
-
-    console.log(matchingGames);
 
     return (
         <>

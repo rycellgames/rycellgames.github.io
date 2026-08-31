@@ -2,16 +2,16 @@ import Link from "next/link";
 import { game } from "@/lib/global";
 import { FavoriteStar } from "../personalized/buttons/favoriteStar";
 
-export function GridCard({ name, id, ...props }: { name: string, id: string } & React.HTMLAttributes<HTMLHyperlinkElementUtils>) {
+export function GridCard({ name, id, fixedSize,...props }: { name: string, id: string, fixedSize?: boolean } & React.HTMLAttributes<HTMLHyperlinkElementUtils>) {
     return (
         <div className={`group w-full flex flex-col-reverse relative justify-between items-center not-md:w-full aspect-square rounded-2xl cursor-pointer hover:shadow-[inset_0px_0px_50px_20px_#111] transition-all duration-300 ease-in-out ${props.className ?? ''}`}>
-            <Link href={`/games/${id}`} data-id={id} className={"z-2 w-full h-full absolute group-hover:shadow-[inset_0px_0px_50px_20px_#111] transition-all duration-300 ease-in-out"}
+            <Link href={`/games/${id}`} data-id={id} className={`z-2 w-full h-full absolute group-hover:shadow-[inset_0px_0px_50px_20px_#111] transition-all duration-300 ease-in-out ${props.className ?? ''}`}
 
-                {...props}
+                
             >
                 
             </Link>
-            <img loading="lazy" className="z-1 w-full absolute h-full object-cover rounded-2xl" src={`/static/images/games/${id}.webp`} alt={`${name}`}></img>
+            <img loading="lazy" className={`z-1 w-full absolute h-full object-cover rounded-2xl ${fixedSize ? 'h-63 w-63' : ''}`} src={`/static/images/games/${id}.webp`} alt={`${name}`}></img>
             <p className="pb-2 z-20">{name}</p>
 
             <div className="z-3 w-full flex-row items-start p-3">
